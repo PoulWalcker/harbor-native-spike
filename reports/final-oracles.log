@@ -1,0 +1,23 @@
+warning: `VIRTUAL_ENV=/Users/pashvel/Desktop/work/backend/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+fatal: bad revision 'HEAD'
+  2/2 Mean: 0.866 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 0:01:21 0:00:00
+tasks • oracle
+┏━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━┓
+┃ Trials ┃ Exceptions ┃  Mean ┃
+┡━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━┩
+│      2 │          0 │ 0.866 │
+└────────┴────────────┴───────┘
+
+┏━━━━━━━━┳━━━━━━━┓
+┃ Reward ┃ Count ┃
+┡━━━━━━━━╇━━━━━━━┩
+│ 0.732  │     1 │
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 1m 21s
+Results written to jobs/final-oracles/result.json
+Inspect results by running `harbor view jobs`
+Share results by running `harbor upload jobs/final-oracles`
+

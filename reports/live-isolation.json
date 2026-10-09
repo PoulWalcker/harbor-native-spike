@@ -1,0 +1,127 @@
+{
+  "04fc70ff2ec6": {
+    "project": "checkout-recovery__eerwbhy__env",
+    "service": "main",
+    "image": "sha256:684e9a1dfda2f78cc7742ecb888a72f63bd130c36adaef0a46bf4e2a2343c655",
+    "mounts": [
+      {
+        "Type": "bind",
+        "Source": "/Users/pashvel/Desktop/harbor-native-spike/jobs/security-8f436d75/checkout-recovery__EerWBhy/verifier",
+        "Destination": "/logs/verifier",
+        "Mode": "rw",
+        "RW": true,
+        "Propagation": "rprivate"
+      },
+      {
+        "Type": "bind",
+        "Source": "/Users/pashvel/Desktop/harbor-native-spike/jobs/security-8f436d75/checkout-recovery__EerWBhy/agent",
+        "Destination": "/logs/agent",
+        "Mode": "rw",
+        "RW": true,
+        "Propagation": "rprivate"
+      },
+      {
+        "Type": "bind",
+        "Source": "/Users/pashvel/Desktop/harbor-native-spike/jobs/security-8f436d75/checkout-recovery__EerWBhy/artifacts/logs/artifacts",
+        "Destination": "/logs/artifacts",
+        "Mode": "rw",
+        "RW": true,
+        "Propagation": "rprivate"
+      }
+    ],
+    "networks": [
+      "none"
+    ],
+    "env_keys": [
+      "PATH"
+    ]
+  },
+  "70c636f9240b": {
+    "project": "checkout-recovery__eerwbhy__verifier__trial",
+    "service": "simulator",
+    "image": "sha256:3317010f776d13d7febb7c6b721ebba4d4fc31f0e66053198dea00b70b04a162",
+    "mounts": [
+      {
+        "Type": "volume",
+        "Name": "checkout-recovery__eerwbhy__verifier__trial_checkout-credentials",
+        "Source": "/var/lib/docker/volumes/checkout-recovery__eerwbhy__verifier__trial_checkout-credentials/_data",
+        "Destination": "/run/checkout",
+        "Driver": "local",
+        "Mode": "rw",
+        "RW": true,
+        "Propagation": ""
+      },
+      {
+        "Type": "bind",
+        "Source": "/Users/pashvel/Desktop/harbor-native-spike/jobs/security-8f436d75/checkout-recovery__EerWBhy/verifier",
+        "Destination": "/logs/verifier",
+        "Mode": "rw",
+        "RW": true,
+        "Propagation": "rprivate"
+      }
+    ],
+    "networks": [
+      "checkout-recovery__eerwbhy__verifier__trial_verification"
+    ],
+    "env_keys": [
+      "PATH",
+      "N8N_DIAGNOSTICS_ENABLED",
+      "N8N_VERSION_NOTIFICATIONS_ENABLED",
+      "N8N_TEMPLATES_ENABLED",
+      "N8N_RUNNERS_ENABLED",
+      "N8N_LOG_LEVEL",
+      "N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS",
+      "EXECUTIONS_DATA_SAVE_ON_SUCCESS",
+      "EXECUTIONS_DATA_SAVE_ON_ERROR",
+      "EXECUTIONS_DATA_SAVE_MANUAL_EXECUTIONS",
+      "PYTHONPATH",
+      "PYTHONDONTWRITEBYTECODE",
+      "PYTHONNOUSERSITE",
+      "AUTOWFBENCH_ROOT"
+    ]
+  },
+  "4da7db587616": {
+    "project": "checkout-recovery__eerwbhy__verifier__trial",
+    "service": "main",
+    "image": "sha256:67c23cab0805873c76c2f63ae98a83f6d3d5eb570a127f6be463a41f52ef90ea",
+    "mounts": [
+      {
+        "Type": "volume",
+        "Name": "checkout-recovery__eerwbhy__verifier__trial_checkout-credentials",
+        "Source": "/var/lib/docker/volumes/checkout-recovery__eerwbhy__verifier__trial_checkout-credentials/_data",
+        "Destination": "/run/checkout",
+        "Driver": "local",
+        "Mode": "ro",
+        "RW": false,
+        "Propagation": ""
+      },
+      {
+        "Type": "bind",
+        "Source": "/Users/pashvel/Desktop/harbor-native-spike/jobs/security-8f436d75/checkout-recovery__EerWBhy/verifier",
+        "Destination": "/logs/verifier",
+        "Mode": "rw",
+        "RW": true,
+        "Propagation": "rprivate"
+      }
+    ],
+    "networks": [
+      "checkout-recovery__eerwbhy__verifier__trial_verification"
+    ],
+    "env_keys": [
+      "PATH",
+      "N8N_DIAGNOSTICS_ENABLED",
+      "N8N_VERSION_NOTIFICATIONS_ENABLED",
+      "N8N_TEMPLATES_ENABLED",
+      "N8N_RUNNERS_ENABLED",
+      "N8N_LOG_LEVEL",
+      "N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS",
+      "EXECUTIONS_DATA_SAVE_ON_SUCCESS",
+      "EXECUTIONS_DATA_SAVE_ON_ERROR",
+      "EXECUTIONS_DATA_SAVE_MANUAL_EXECUTIONS",
+      "PYTHONPATH",
+      "PYTHONDONTWRITEBYTECODE",
+      "PYTHONNOUSERSITE",
+      "AUTOWFBENCH_ROOT"
+    ]
+  }
+}

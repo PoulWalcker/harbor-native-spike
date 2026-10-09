@@ -1,0 +1,14 @@
+{
+  "version": "0.21.0",
+  "inspected_package_sources": {
+    "agents/base.py": "2793d9788bdeb5228f4477fc1eaa834471a0f4d485cc19c02143e7a0a115ae65",
+    "environments/docker/docker.py": "8afcb733fac3ff9d0df0d7e4c6c0583a59ae6c0df0be196094157af36c8ee22d",
+    "models/task/config.py": "f9f63db9128f64243394c43d5bba18845554adcf5e86a661979fd5cdf3b1801f",
+    "trial/artifact_handler.py": "1edb206978de86a2f4965e1b87268e66db09fb1300aad9160c9f71d3c8fc6cb4",
+    "verifier/verifier.py": "7110e7b854ec216f9bbef2e3b03712f2fd2614d5d0dc8a9a1768c0e887e129fc"
+  },
+  "primary_documentation": [
+    "https://github.com/harbor-framework/harbor/blob/main/docs/content/docs/tasks/index.mdx",
+    "https://github.com/harbor-framework/harbor/blob/main/examples/tasks/sidecar-artifacts/task.toml"
+  ]
+}

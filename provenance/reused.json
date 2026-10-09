@@ -1,0 +1,215 @@
+{
+  "src/native_spike/profile.py": {
+    "source": "src/sapi_config_lab/profile.py",
+    "sha256": "4b6319010f9b9ce62636d3553032bb52afc311a866e44adf00fd7d95ed904665",
+    "spike_sha256": "2607d2e0b7f5d6964e56cccf92b77fd72094a6cb21ea73039aa25efa8b45ab40"
+  },
+  "src/native_spike/contracts.py": {
+    "source": "src/sapi_config_lab/contracts.py",
+    "sha256": "58de9a943676583bfc40377f3b98149382bca49fe7ca23068c842a223b6807f2",
+    "spike_sha256": "f5797c917e6eef38e647de461ffeaea85fecb46d6ae0223424eda51b54bff47b"
+  },
+  "src/native_spike/evidence.py": {
+    "source": "src/sapi_config_lab/evidence.py",
+    "sha256": "3806284d7a0261364ea37d0b8b80c9fce9c3ccc973b73ae9d231066fa57f3ae7",
+    "spike_sha256": "0cae378768565e545e8c2cb25b22c35e74c77cbd7157bb2d8e3e301624a9aa62"
+  },
+  "src/native_spike/wrapper_audit.py": {
+    "source": "src/sapi_config_lab/wrapper_audit.py",
+    "sha256": "c9097493de7755084089c71e303db410f24a41f913a724e8977aeaddc487d06a",
+    "spike_sha256": "c9097493de7755084089c71e303db410f24a41f913a724e8977aeaddc487d06a"
+  },
+  "src/native_spike/net.py": {
+    "source": "src/sapi_config_lab/net.py",
+    "sha256": "da29780036888fe19c511b97514d52b58f3b7128ff2d3c9446e99ddf27e6747d",
+    "spike_sha256": "da29780036888fe19c511b97514d52b58f3b7128ff2d3c9446e99ddf27e6747d"
+  },
+  "src/native_spike/compile/n8n.py": {
+    "source": "src/sapi_config_lab/compile/n8n.py",
+    "sha256": "3f0cb1cae4c0c46417ac377913cd5a1ee66b5f72c70425f393364c6a3bee6d01",
+    "spike_sha256": "291e8e68bac1913f19a1ada9b195bb32d609a50a73f66aacdc54402355603990"
+  },
+  "src/native_spike/compile/refinement.py": {
+    "source": "src/sapi_config_lab/compile/refinement.py",
+    "sha256": "1691909a02129d57638cff4b0ca96d6bfc4a159b808bf6707f0bdd01ffc7685e",
+    "spike_sha256": "b0ef51e2de87abe0472301be4fe4a71d1bb809274da675aa8afd9a1fcbf4c9e4"
+  },
+  "src/native_spike/compile/runtime-fragment.js": {
+    "source": "src/sapi_config_lab/compile/runtime-fragment.js",
+    "sha256": "7a18c815afc3a93378fbb8c71b2074bcbd75b11a610cba614f5b9e78bb682546",
+    "spike_sha256": "7a18c815afc3a93378fbb8c71b2074bcbd75b11a610cba614f5b9e78bb682546"
+  },
+  "src/native_spike/execute/n8n.py": {
+    "source": "src/sapi_config_lab/execute/n8n.py",
+    "sha256": "85ff801eb785dd90732427fbcc08d3bfa61ce1d2da051d147e4332ec0f0a29d1",
+    "spike_sha256": "93d89fd661f7c8c227088365905d8597875aa91e7ca7a1fcbfe9544f3c0bbddf"
+  },
+  "src/native_spike/execute/agency-prompt.md": {
+    "source": "src/sapi_config_lab/execute/agency-prompt.md",
+    "sha256": "beff9ff883a10311dcb6a465ebe8bb4702e65ebc89cc2061d56475804bddb643",
+    "spike_sha256": "beff9ff883a10311dcb6a465ebe8bb4702e65ebc89cc2061d56475804bddb643"
+  },
+  "src/acceptance/contracts.py": {
+    "source": "verification/contracts.py",
+    "sha256": "3b8cfaf54f3dcddd101a6f892d246b0db266f4f6d7fa9640a1afae15034e9051",
+    "spike_sha256": "7cf68dea40136892d744c8982eacc6040c6bae3cf8d3147b58947e1b97ee8c87"
+  },
+  "src/acceptance/roles.py": {
+    "source": "verification/roles.py",
+    "sha256": "8d9aa3da0ed1f6a92eb4d82af4dfa22dabc4776a5d8ab3c6ef12a30796f6f639",
+    "spike_sha256": "149dfcf37dd0ff91e4bef9cb0d0d0867c0bd5d17a30dfa4d4335ed79850acb76"
+  },
+  "src/acceptance/n8n_provenance.py": {
+    "source": "verification/n8n_provenance.py",
+    "sha256": "9a8b8493db38386bdfa4c087c84972d32e280dfbef61700bea59d18d345cc250",
+    "spike_sha256": "33ca75176a97bec76e5246acf18ae0dc56c18f6f4a74da653543bba6ddf0231b"
+  },
+  "public/submission.py": {
+    "source": "src/sapi_config_lab/harbor_integration/submission.py",
+    "sha256": "179fe3404b1602bd966f26dba49b9ae5666a2ad5a832d75e85747d710a5b7a29",
+    "spike_sha256": "77aeb24d3d3d8e2319c86a1ae73df83119c21b2d7d8efb2eef014d943a9e21e4"
+  },
+  "tasks/checkout-recovery/tests/world.py": {
+    "source": "benchmarks/10-checkout-recovery/environment/server.py",
+    "sha256": "18fe4ea11dba8d8c86c438d9bc714b10ffabdce575bb3704388bce30ea28d980",
+    "spike_sha256": "eece1e95c13265f0147adb76cef38ba291e531ba99421a6596cab2129380020f"
+  },
+  "tasks/checkout-recovery/tests/install.py": {
+    "source": "benchmarks/10-checkout-recovery/environment/install.py",
+    "sha256": "a043d30872dad00e2b8fe10a4ca70216178f4c01b8166f2a8b6b2bfc6b701cef",
+    "spike_sha256": "cb1f08e1b09e1aae409325b5785bb2a631540ff3a3d1b9cce746701cb2bb132a"
+  },
+  "src/native_spike/checkout_scoring.py": {
+    "source": "benchmarks/10-checkout-recovery/evaluation/scoring.py",
+    "sha256": "55d66c33b6ebac2aad667751a0da164eabc3901f6a42fc60c7bd1c34f2f7990c",
+    "spike_sha256": "86cc6e47e90c53f36d3afb484604f51106dd0e20e425d79277808fee2cbeddbe"
+  },
+  "src/native_spike/execute/agency.py": {
+    "source": "src/sapi_config_lab/execute/agency.py",
+    "sha256": "f16e37f17f4d1b15f073b7b8f8e1439024082d38c0f6dd2d5db5ef2ad6dac2e6",
+    "spike_sha256": "38ecc66099598df1e2bca86e9078f19ab5ce763d4d149f65a54c4db2a8c2e7b5"
+  },
+  "src/native_spike/pinned_source.py": {
+    "source": "src/sapi_config_lab/pinned_source.py",
+    "sha256": "4de09383ce902e9c1739235d4a6ab81553e7e40e6bc3b290c145bd2a2825153a",
+    "spike_sha256": "493b91e0f6471fce2a5e917ab39f946411a7297f86d5a9634bc98535f271566f"
+  },
+  "tasks/invoice-total/environment/public/bindings.yaml": {
+    "source": "benchmarks/01-invoice-total/bindings.yaml",
+    "sha256": "f59ba574360ceef5e23f34a94551061350b9675384e4006ebc43a29c9269b0a2",
+    "spike_sha256": "f59ba574360ceef5e23f34a94551061350b9675384e4006ebc43a29c9269b0a2"
+  },
+  "tasks/invoice-total/solution/config.yaml": {
+    "source": "benchmarks/01-invoice-total/config.yaml",
+    "sha256": "2b4d9b5569cd811053bb2e504de4111b171be188b2deff88b4ca63f187406e99",
+    "spike_sha256": "2b4d9b5569cd811053bb2e504de4111b171be188b2deff88b4ca63f187406e99"
+  },
+  "tasks/invoice-total/tests/operations.js": {
+    "source": "benchmarks/01-invoice-total/operations.js",
+    "sha256": "d6d4b30d4c89185d28a75212f18e53b8ed730b1e023c82631b720f24f35dd23b",
+    "spike_sha256": "d6d4b30d4c89185d28a75212f18e53b8ed730b1e023c82631b720f24f35dd23b"
+  },
+  "tasks/invoice-total/tests/bindings.yaml": {
+    "source": "benchmarks/01-invoice-total/bindings.yaml",
+    "sha256": "f59ba574360ceef5e23f34a94551061350b9675384e4006ebc43a29c9269b0a2",
+    "spike_sha256": "f59ba574360ceef5e23f34a94551061350b9675384e4006ebc43a29c9269b0a2"
+  },
+  "tasks/invoice-total/task.toml": {
+    "source": "benchmarks/01-invoice-total/task.toml",
+    "sha256": "3e38b095563a305b90af90ff5951e8bbb8ae16d767653294e6d8387ec2575a1d",
+    "spike_sha256": "fd4ca4b0dee270467929c28272ce78311da4bc50bd05f55b46712202fe268340"
+  },
+  "tasks/invoice-total/environment/public/PROFILE.md": {
+    "source": "docs/PROFILE.md",
+    "sha256": "657f46ad76eb1350f699d9740eb88dd92ea64b7bcd06d6236d0f70c7e9d2ef85",
+    "spike_sha256": "93e453fb825961a584b13d1f86c8ec0ef12a578b309f20ca289e564734846956"
+  },
+  "tasks/invoice-total/environment/public/FORMAT.md": {
+    "source": "generation/FORMAT.md",
+    "sha256": "4c4c71773ca458291d6b6d39c75d8a798967e51c5e0da297824fff759d54ab57",
+    "spike_sha256": "54df1d0877a31ee67027a8375d599c6249cbc1696d39063ded17ea36cbd295cc"
+  },
+  "tasks/checkout-recovery/environment/public/bindings.yaml": {
+    "source": "benchmarks/10-checkout-recovery/bindings.yaml",
+    "sha256": "946edeff0de22a757d0574601f7f119cda9adf737d8396d8bc53f3056f7f13ba",
+    "spike_sha256": "946edeff0de22a757d0574601f7f119cda9adf737d8396d8bc53f3056f7f13ba"
+  },
+  "tasks/checkout-recovery/solution/config.yaml": {
+    "source": "benchmarks/10-checkout-recovery/config.yaml",
+    "sha256": "c9176e088aa14e7afcde3cfb8a461841061a25cc9d8abb8b70acb8154150b1a9",
+    "spike_sha256": "c9176e088aa14e7afcde3cfb8a461841061a25cc9d8abb8b70acb8154150b1a9"
+  },
+  "tasks/checkout-recovery/tests/operations.js": {
+    "source": "benchmarks/10-checkout-recovery/operations.js",
+    "sha256": "f5be1b1adc985f6b45f769a4ef764068febb06e6570bf007717a262787ff1aed",
+    "spike_sha256": "f5be1b1adc985f6b45f769a4ef764068febb06e6570bf007717a262787ff1aed"
+  },
+  "tasks/checkout-recovery/tests/bindings.yaml": {
+    "source": "benchmarks/10-checkout-recovery/bindings.yaml",
+    "sha256": "946edeff0de22a757d0574601f7f119cda9adf737d8396d8bc53f3056f7f13ba",
+    "spike_sha256": "946edeff0de22a757d0574601f7f119cda9adf737d8396d8bc53f3056f7f13ba"
+  },
+  "tasks/checkout-recovery/task.toml": {
+    "source": "benchmarks/10-checkout-recovery/task.toml",
+    "sha256": "d2cc5c575de9b92db73fb1565d24b5026d002689d8b2c0eaf8a3731be624e2c1",
+    "spike_sha256": "fd4ca4b0dee270467929c28272ce78311da4bc50bd05f55b46712202fe268340"
+  },
+  "tasks/checkout-recovery/environment/public/PROFILE.md": {
+    "source": "docs/PROFILE.md",
+    "sha256": "657f46ad76eb1350f699d9740eb88dd92ea64b7bcd06d6236d0f70c7e9d2ef85",
+    "spike_sha256": "93e453fb825961a584b13d1f86c8ec0ef12a578b309f20ca289e564734846956"
+  },
+  "tasks/checkout-recovery/environment/public/FORMAT.md": {
+    "source": "generation/FORMAT.md",
+    "sha256": "4c4c71773ca458291d6b6d39c75d8a798967e51c5e0da297824fff759d54ab57",
+    "spike_sha256": "4c4c71773ca458291d6b6d39c75d8a798967e51c5e0da297824fff759d54ab57"
+  },
+  "tasks/invoice-total/tests/cases.json": {
+    "source": "benchmarks/01-invoice-total/cases.json",
+    "sha256": "63bb1d51876629e0564d97faf4ed589e69f74f577feee6f169f851e0ca6bfdea",
+    "spike_sha256": "63bb1d51876629e0564d97faf4ed589e69f74f577feee6f169f851e0ca6bfdea"
+  },
+  "tasks/invoice-total/tests/contract.json": {
+    "source": "benchmarks/01-invoice-total/evaluation/contract.json",
+    "sha256": "d913d21f471b98b22571cc5e6e61a18c83ddd3d7adbcfe3d867916c3e3ac859a",
+    "spike_sha256": "d913d21f471b98b22571cc5e6e61a18c83ddd3d7adbcfe3d867916c3e3ac859a"
+  },
+  "tasks/invoice-total/tests/outputs.json": {
+    "source": "benchmarks/01-invoice-total/evaluation/outputs.json",
+    "sha256": "94e0e378db18bd56dc390f7c0ed5c562e09bbec4c07af87121b0b20335aa869c",
+    "spike_sha256": "94e0e378db18bd56dc390f7c0ed5c562e09bbec4c07af87121b0b20335aa869c"
+  },
+  "tasks/checkout-recovery/tests/provenance/autowfbench-source.json": {
+    "source": "benchmarks/10-checkout-recovery/provenance/autowfbench-source.json",
+    "sha256": "be4d9f1d2c1358ad9790415ba990b83ee64f162ebce4942c68e6361487fbb59c",
+    "spike_sha256": "be4d9f1d2c1358ad9790415ba990b83ee64f162ebce4942c68e6361487fbb59c"
+  },
+  "tasks/checkout-recovery/instruction.md": {
+    "source": "benchmarks/10-checkout-recovery/authoring-prompt.txt",
+    "sha256": "920472a634ec32c6d55d66aceec6c4a66035d6cd69b5bc3ad36f3b3c315fae17",
+    "spike_sha256": "21ff0b0807e54a4ba9794fc49f77b002d89ce2f847dde513b0353a1594d601ba"
+  },
+  "tasks/invoice-total/instruction.md": {
+    "source": "benchmarks/01-invoice-total/task.md",
+    "sha256": "c4313b1367d8de5bd41dd500a322301f04428b167d9cd7b8d52b25f3297f9bb0",
+    "spike_sha256": "16dba05774cad3f3a17a7b5c3190ad4f12eb69f4297380ec913b699e1026699e"
+  },
+  "tasks/checkout-recovery/tests/snapshot.py": {
+    "source": "benchmarks/10-checkout-recovery/environment/hooks.py",
+    "sha256": "cd2d48ee81c70db81cd1fbfdba6c2a4e5ca85b9d8fb850992e78fc818b0a29af",
+    "reuse": "Domain functions/test adaptation; not a full-file byte copy",
+    "spike_sha256": "3e951c954f82ee8a8db19c7ff613c6b13d997328e7a7f59388eed68e3aaa1843"
+  },
+  "tasks/invoice-total/tests/business.py": {
+    "source": "benchmarks/01-invoice-total/evaluation/evaluator.py",
+    "sha256": "6dcfe760a5e51c048c966c5b3db510a131a757b018d52089b6525c34cc673308",
+    "reuse": "Domain functions/test adaptation; not a full-file byte copy",
+    "spike_sha256": "11ee1204cb6fb6e80ef6a3b76973c40963a2be25ee9301446e30e0115ac7ca35"
+  },
+  "tests/test_world_failures.py": {
+    "source": "tests/test_checkout_failure_evidence.py",
+    "sha256": "11e350ccf4fcf237f827690c4fece461367e6e4437252254c56b1cc977944f17",
+    "reuse": "Domain functions/test adaptation; not a full-file byte copy",
+    "spike_sha256": "39f82aa4b4148285607b5fc11208067e553ba9ad8dd618bc4c75f2a57649ef68"
+  }
+}

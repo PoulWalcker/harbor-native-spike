@@ -1,0 +1,13 @@
+{
+  "job": "death-31198bac",
+  "evaluation": {
+    "status": "not_evaluated",
+    "execution": null,
+    "acceptance": null,
+    "score_0_10": null,
+    "normalized_reward": null,
+    "reason": "unknown_outcome"
+  },
+  "durable_window": true,
+  "retries": 0
+}

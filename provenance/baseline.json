@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/PoulWalcker/benchmarking",
+  "branch": "migration/benchmark-ownership",
+  "commit": "872aea76a493a82562dea391371c38de4397d3df",
+  "observed_at": "2026-10-09",
+  "harbor": "0.21.0",
+  "policy": "Fixed reference; no resynchronization; original working tree untouched"
+}

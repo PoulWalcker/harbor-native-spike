@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+jobs/
+build/
+dist/
+.cache/
+tasks/*/tests/vendor/

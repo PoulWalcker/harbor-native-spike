@@ -1,0 +1,21 @@
+fatal: bad revision 'HEAD'
+  1/1 Mean: 0.732 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 0:00:55 0:00:00
+adhoc • spike-control
+┏━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━┓
+┃ Trials ┃ Exceptions ┃  Mean ┃
+┡━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━┩
+│      1 │          0 │ 0.732 │
+└────────┴────────────┴───────┘
+
+┏━━━━━━━━┳━━━━━━━┓
+┃ Reward ┃ Count ┃
+┡━━━━━━━━╇━━━━━━━┩
+│ 0.732  │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 55s
+Results written to jobs/security-8f436d75/result.json
+Inspect results by running `harbor view jobs`
+Share results by running `harbor upload jobs/security-8f436d75`
+

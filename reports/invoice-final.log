@@ -1,0 +1,22 @@
+warning: `VIRTUAL_ENV=/Users/pashvel/Desktop/work/backend/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+fatal: bad revision 'HEAD'
+  1/1 Mean: 1.000 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 0:01:24 0:00:00
+adhoc • oracle
+┏━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━┓
+┃ Trials ┃ Exceptions ┃  Mean ┃
+┡━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━┩
+│      1 │          0 │ 1.000 │
+└────────┴────────────┴───────┘
+
+┏━━━━━━━━┳━━━━━━━┓
+┃ Reward ┃ Count ┃
+┡━━━━━━━━╇━━━━━━━┩
+│ 1.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 1m 24s
+Results written to jobs/invoice-final/result.json
+Inspect results by running `harbor view jobs`
+Share results by running `harbor upload jobs/invoice-final`
+

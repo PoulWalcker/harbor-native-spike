@@ -1,0 +1,14 @@
+{
+  "offline_passed": 43,
+  "native_distinct_passed": 20,
+  "total_collected": 63,
+  "invoice_reward": 1.0,
+  "checkout_reward": 0.732,
+  "checkout_judge": "SIMULATED",
+  "paid_calls": 0,
+  "original_commit": "872aea76a493a82562dea391371c38de4397d3df",
+  "production_lines_original": 14080,
+  "production_lines_spike": 6333,
+  "reduction_percent": 55.0,
+  "recommendation": "A: migrate existing repository toward native tasks; retain domain and research safety mechanisms"
+}

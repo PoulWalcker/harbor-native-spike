@@ -1,0 +1,944 @@
+[
+  {
+    "job": "checkout-llm-01",
+    "trial": "checkout-recovery__7EpQeqq",
+    "task": "checkout-recovery",
+    "task_checksum": "fed8c8b9df8a2e878989c3293c630689bb7695d5832c5c45109d18ebec00396f",
+    "agent": {
+      "name": "spike-control",
+      "version": "1",
+      "model_info": null
+    },
+    "rewards": {
+      "reward": 0.732
+    },
+    "exception_type": null,
+    "evaluation": {
+      "status": "complete",
+      "execution": true,
+      "terminal_completion": true,
+      "acceptance": true,
+      "score_0_10": 7.32,
+      "normalized_reward": 0.732,
+      "judge": "SIMULATED; no model quality claim"
+    },
+    "result_sha256": "50ccbda29701c54252df6c3608e3fd9b60be02a61e3bcad9eb6d57a5846a269f"
+  },
+  {
+    "job": "checkout-oracle-01",
+    "trial": "checkout-recovery__fQZxFbG",
+    "task": "checkout-recovery",
+    "task_checksum": "868a00faf24ee7227808e508790b7f8880e0117f26326718324412ca8258c0b9",
+    "agent": {
+      "name": "oracle",
+      "version": "1.0.0",
+      "model_info": null
+    },
+    "rewards": {
+      "reward": 0.732
+    },
+    "exception_type": null,
+    "evaluation": {
+      "status": "complete",
+      "execution": true,
+      "terminal_completion": true,
+      "acceptance": true,
+      "score_0_10": 7.32,
+      "normalized_reward": 0.732,
+      "judge": "SIMULATED; no model quality claim"
+    },
+    "result_sha256": "84b361815c322093bf51c01811ae8fdbb63b2ee40de40a797d94584a6e7c22dd"
+  },
+  {
+    "job": "death-31198bac",
+    "trial": "checkout-recovery__Ybd6CBX",
+    "task": "checkout-recovery",
+    "task_checksum": "af546a83750848d71a85ca954109757796db3668dd86c112da428998a09f1851",
+    "agent": {
+      "name": "oracle",
+      "version": "1.0.0",
+      "model_info": null
+    },
+    "rewards": null,
+    "exception_type": "RewardFileNotFoundError",
+    "evaluation": {
+      "status": "not_evaluated",
+      "execution": null,
+      "acceptance": null,
+      "score_0_10": null,
+      "normalized_reward": null,
+      "reason": "unknown_outcome"
+    },
+    "result_sha256": "1e3e0d3c2ab1ec147282f93ea2dd12da16559d01bf078b8f7fedc9488c4dd3f5"
+  },
+  {
+    "job": "final-oracles",
+    "trial": "checkout-recovery__ZaX6unE",
+    "task": "checkout-recovery",
+    "task_checksum": "9ae99450496d40f7c3d862d118f00f1434957dede030a514f92b6409044d2d4b",
+    "agent": {
+      "name": "oracle",
+      "version": "1.0.0",
+      "model_info": null
+    },
+    "rewards": {
+      "reward": 0.732
+    },
+    "exception_type": null,
+    "evaluation": {
+      "status": "complete",
+      "execution": true,
+      "terminal_completion": true,
+      "acceptance": true,
+      "score_0_10": 7.32,
+      "normalized_reward": 0.732,
+      "judge": "SIMULATED; no model quality claim"
+    },
+    "result_sha256": "d6f61c56edabb415841e5c27b6190253642c98be744c05c334f13bdc9480da0a"
+  },
+  {
+    "job": "final-oracles",
+    "trial": "invoice-total__cBdn48c",
+    "task": "invoice-total",
+    "task_checksum": "170a1391307ee590cee2135691089104547767342d2982829483540b705f995e",
+    "agent": {
+      "name": "oracle",
+      "version": "1.0.0",
+      "model_info": null
+    },
+    "rewards": {
+      "reward": 1.0
+    },
+    "exception_type": null,
+    "evaluation": {
+      "status": "complete",
+      "execution": true,
+      "acceptance": true,
+      "cases": [
+        {
+          "name": "original-38000",
+          "passed": true
+        },
+        {
+          "name": "alternate-values-zero",
+          "passed": true
+        },
+        {
+          "name": "maximum-safe-total",
+          "passed": true
+        },
+        {
+          "name": "empty",
+          "passed": true
+        },
+        {
+          "name": "duplicate-id",
+          "passed": true
+        },
+        {
+          "name": "mixed-currencies",
+          "passed": true
+        },
+        {
+          "name": "negative-amount",
+          "passed": true
+        },
+        {
+          "name": "fractional-amount",
+          "passed": true
+        },
+        {
+          "name": "unsafe-amount",
+          "passed": true
+        },
+        {
+          "name": "total-overflow",
+          "passed": true
+        }
+      ],
+      "normalized_reward": 1
+    },
+    "result_sha256": "468336540300d819e6a2d93f5b6d56e0f25abd9b121f3cb7d25367a126dab60b"
+  },
+  {
+    "job": "invoice-final",
+    "trial": "invoice-total__G4JdTKX",
+    "task": "invoice-total",
+    "task_checksum": "170a1391307ee590cee2135691089104547767342d2982829483540b705f995e",
+    "agent": {
+      "name": "oracle",
+      "version": "1.0.0",
+      "model_info": null
+    },
+    "rewards": {
+      "reward": 1.0
+    },
+    "exception_type": null,
+    "evaluation": {
+      "status": "complete",
+      "execution": true,
+      "acceptance": true,
+      "cases": [
+        {
+          "name": "original-38000",
+          "passed": true
+        },
+        {
+          "name": "alternate-values-zero",
+          "passed": true
+        },
+        {
+          "name": "maximum-safe-total",
+          "passed": true
+        },
+        {
+          "name": "empty",
+          "passed": true
+        },
+        {
+          "name": "duplicate-id",
+          "passed": true
+        },
+        {
+          "name": "mixed-currencies",
+          "passed": true
+        },
+        {
+          "name": "negative-amount",
+          "passed": true
+        },
+        {
+          "name": "fractional-amount",
+          "passed": true
+        },
+        {
+          "name": "unsafe-amount",
+          "passed": true
+        },
+        {
+          "name": "total-overflow",
+          "passed": true
+        }
+      ],
+      "normalized_reward": 1
+    },
+    "result_sha256": "46651aef1f9f58b5273e56396a4b33a9dc4534b1d087c29b5e8375d8192a65a7"
+  },
+  {
+    "job": "invoice-nop-01",
+    "trial": "invoice-total__LBB4RWT",
+    "task": "invoice-total",
+    "task_checksum": "e85b7f1d31c24b697a6fe03c9859b0277989aaf539815d75d38b6ef74ea994e3",
+    "agent": {
+      "name": "nop",
+      "version": "1.0.0",
+      "model_info": null
+    },
+    "rewards": {
+      "reward": 0.0
+    },
+    "exception_type": null,
+    "evaluation": {
+      "status": "rejected",
+      "acceptance": false,
+      "execution": null,
+      "reason": "ValueError",
+      "normalized_reward": 0
+    },
+    "result_sha256": "2102ea51f6fa1f914e18dc7136416fad47773b78dd9e2a82aba3c03bed13df9d"
+  },
+  {
+    "job": "invoice-oracle-01",
+    "trial": "invoice-total__4Xjhd6Z",
+    "task": "invoice-total",
+    "task_checksum": "e85b7f1d31c24b697a6fe03c9859b0277989aaf539815d75d38b6ef74ea994e3",
+    "agent": {
+      "name": "oracle",
+      "version": "1.0.0",
+      "model_info": null
+    },
+    "rewards": {
+      "reward": 1.0
+    },
+    "exception_type": null,
+    "evaluation": {
+      "status": "complete",
+      "acceptance": true,
+      "cases": [
+        {
+          "name": "original-38000",
+          "passed": true
+        },
+        {
+          "name": "alternate-values-zero",
+          "passed": true
+        },
+        {
+          "name": "maximum-safe-total",
+          "passed": true
+        },
+        {
+          "name": "empty",
+          "passed": true
+        },
+        {
+          "name": "duplicate-id",
+          "passed": true
+        },
+        {
+          "name": "mixed-currencies",
+          "passed": true
+        },
+        {
+          "name": "negative-amount",
+          "passed": true
+        },
+        {
+          "name": "fractional-amount",
+          "passed": true
+        },
+        {
+          "name": "unsafe-amount",
+          "passed": true
+        },
+        {
+          "name": "total-overflow",
+          "passed": true
+        }
+      ],
+      "normalized_reward": 1
+    },
+    "result_sha256": "019640695138ec451173b64e6d3435d01bf5826129e4d31596c49eac1f70ae22"
+  },
+  {
+    "job": "invoice-wrong-02",
+    "trial": "invoice-total__uCv5ydM",
+    "task": "invoice-total",
+    "task_checksum": "e85b7f1d31c24b697a6fe03c9859b0277989aaf539815d75d38b6ef74ea994e3",
+    "agent": {
+      "name": "spike-control",
+      "version": "1",
+      "model_info": null
+    },
+    "rewards": {
+      "reward": 0.0
+    },
+    "exception_type": null,
+    "evaluation": {
+      "status": "complete",
+      "acceptance": false,
+      "cases": [
+        {
+          "name": "original-38000",
+          "passed": false,
+          "reason": "workflow output: submitted {\"currency\":\"AED\",\"invoice_count\":3,\"total_minor\":38000}, contract requires {\"ref\":\"steps.report\"}"
+        },
+        {
+          "name": "alternate-values-zero",
+          "passed": false,
+          "reason": "workflow output: submitted {\"currency\":\"AED\",\"invoice_count\":3,\"total_minor\":38000}, contract requires {\"ref\":\"steps.report\"}"
+        },
+        {
+          "name": "maximum-safe-total",
+          "passed": false,
+          "reason": "workflow output: submitted {\"currency\":\"AED\",\"invoice_count\":3,\"total_minor\":38000}, contract requires {\"ref\":\"steps.report\"}"
+        },
+        {
+          "name": "empty",
+          "passed": true
+        },
+        {
+          "name": "duplicate-id",
+          "passed": true
+        },
+        {
+          "name": "mixed-currencies",
+          "passed": true
+        },
+        {
+          "name": "negative-amount",
+          "passed": true
+        },
+        {
+          "name": "fractional-amount",
+          "passed": true
+        },
+        {
+          "name": "unsafe-amount",
+          "passed": true
+        },
+        {
+          "name": "total-overflow",
+          "passed": true
+        }
+      ],
+      "normalized_reward": 0
+    },
+    "result_sha256": "d37afa531ce594dea0c630ad0df43244f51b1c2dffe79473dfca947eaf4e8a3d"
+  },
+  {
+    "job": "security-8f436d75",
+    "trial": "checkout-recovery__EerWBhy",
+    "task": "checkout-recovery",
+    "task_checksum": "af546a83750848d71a85ca954109757796db3668dd86c112da428998a09f1851",
+    "agent": {
+      "name": "spike-control",
+      "version": "1",
+      "model_info": null
+    },
+    "rewards": {
+      "reward": 0.732
+    },
+    "exception_type": null,
+    "evaluation": {
+      "status": "complete",
+      "execution": true,
+      "terminal_completion": true,
+      "acceptance": true,
+      "score_0_10": 7.32,
+      "normalized_reward": 0.732,
+      "judge": "SIMULATED; no model quality claim"
+    },
+    "result_sha256": "cf287e83229499a3dcdcb0c02739ce32edd1829adeff3b9a79489260d5fc300d"
+  },
+  {
+    "job": "test-checkout-recovery-41109e49",
+    "trial": "checkout-recovery__oSm4UV4",
+    "task": "checkout-recovery",
+    "task_checksum": "9ae99450496d40f7c3d862d118f00f1434957dede030a514f92b6409044d2d4b",
+    "agent": {
+      "name": "oracle",
+      "version": "1.0.0",
+      "model_info": null
+    },
+    "rewards": null,
+    "exception_type": "RewardFileNotFoundError",
+    "evaluation": {
+      "status": "awaiting_llm_judge",
+      "execution": true,
+      "terminal_completion": true,
+      "acceptance": true,
+      "score_0_10": null,
+      "normalized_reward": null,
+      "judge": "SIMULATED; no model quality claim"
+    },
+    "result_sha256": "f4e19730fb445f9ac2297f219bbf9b583f343d5780f00308f72ff77a7bf88436"
+  },
+  {
+    "job": "test-checkout-recovery-6681bfd7",
+    "trial": "checkout-recovery__J8YVhVy",
+    "task": "checkout-recovery",
+    "task_checksum": "8ca989b651fc6da130ffe61c811a046a286cc99e4cd613e33921af7768e7e25a",
+    "agent": {
+      "name": "spike-control",
+      "version": "1",
+      "model_info": null
+    },
+    "rewards": null,
+    "exception_type": "RewardFileNotFoundError",
+    "evaluation": {
+      "status": "judge_failed",
+      "execution": false,
+      "terminal_completion": false,
+      "acceptance": false,
+      "score_0_10": null,
+      "normalized_reward": null,
+      "judge": "SIMULATED; no model quality claim"
+    },
+    "result_sha256": "d08123869381fc5fd03790f2018890119f916038fc777a6903f2d65ece26b954"
+  },
+  {
+    "job": "test-checkout-recovery-7becc763",
+    "trial": "checkout-recovery__KusUqzb",
+    "task": "checkout-recovery",
+    "task_checksum": "af546a83750848d71a85ca954109757796db3668dd86c112da428998a09f1851",
+    "agent": {
+      "name": "spike-control",
+      "version": "1",
+      "model_info": null
+    },
+    "rewards": {
+      "reward": 0.732
+    },
+    "exception_type": null,
+    "evaluation": {
+      "status": "complete",
+      "execution": true,
+      "terminal_completion": true,
+      "acceptance": true,
+      "score_0_10": 7.32,
+      "normalized_reward": 0.732,
+      "judge": "SIMULATED; no model quality claim"
+    },
+    "result_sha256": "a310765a6af6ee7ea4c74c839749a7f53a454525c841d1ed11b6f06733f0f24f"
+  },
+  {
+    "job": "test-checkout-recovery-8423e01a",
+    "trial": "checkout-recovery__f37mxV9",
+    "task": "checkout-recovery",
+    "task_checksum": "af546a83750848d71a85ca954109757796db3668dd86c112da428998a09f1851",
+    "agent": {
+      "name": "oracle",
+      "version": "1.0.0",
+      "model_info": null
+    },
+    "rewards": {
+      "reward": 0.732
+    },
+    "exception_type": null,
+    "evaluation": {
+      "status": "complete",
+      "execution": true,
+      "terminal_completion": true,
+      "acceptance": true,
+      "score_0_10": 7.32,
+      "normalized_reward": 0.732,
+      "judge": "SIMULATED; no model quality claim"
+    },
+    "result_sha256": "5891d4c69d8eb20dc7f58ef55f2b0905e7153c5d45416585e095d8469f3e0b0c"
+  },
+  {
+    "job": "test-checkout-recovery-bc007c7e",
+    "trial": "checkout-recovery__z2mMeBE",
+    "task": "checkout-recovery",
+    "task_checksum": "2da0ea88f3ce6a8a96d2c7a2556958fb40f403d46fcddf7c62df75c08c5645ae",
+    "agent": {
+      "name": "spike-control",
+      "version": "1",
+      "model_info": null
+    },
+    "rewards": null,
+    "exception_type": "RewardFileNotFoundError",
+    "evaluation": {
+      "status": "judge_failed",
+      "execution": false,
+      "terminal_completion": false,
+      "acceptance": false,
+      "score_0_10": null,
+      "normalized_reward": null,
+      "judge": "SIMULATED; no model quality claim"
+    },
+    "result_sha256": "950b349be6b58d052417e021574439a9b6f102bd6d2f7fa7faaa83262597c052"
+  },
+  {
+    "job": "test-checkout-recovery-c1bc83b0",
+    "trial": "checkout-recovery__QbuFirQ",
+    "task": "checkout-recovery",
+    "task_checksum": "af546a83750848d71a85ca954109757796db3668dd86c112da428998a09f1851",
+    "agent": {
+      "name": "spike-control",
+      "version": "1",
+      "model_info": null
+    },
+    "rewards": null,
+    "exception_type": "RewardFileNotFoundError",
+    "evaluation": {
+      "status": "judge_failed",
+      "execution": false,
+      "terminal_completion": false,
+      "acceptance": false,
+      "score_0_10": null,
+      "normalized_reward": null,
+      "judge": "SIMULATED; no model quality claim"
+    },
+    "result_sha256": "f160894ca881490752a01321b23f2f45582c85ccc81fc51fed5de2becdbf6276"
+  },
+  {
+    "job": "test-checkout-recovery-c280c5e2",
+    "trial": "checkout-recovery__JM2fCVu",
+    "task": "checkout-recovery",
+    "task_checksum": "af546a83750848d71a85ca954109757796db3668dd86c112da428998a09f1851",
+    "agent": {
+      "name": "nop",
+      "version": "1.0.0",
+      "model_info": null
+    },
+    "rewards": null,
+    "exception_type": "RewardFileNotFoundError",
+    "evaluation": {
+      "status": "not_evaluated",
+      "execution": null,
+      "acceptance": false,
+      "score_0_10": null,
+      "normalized_reward": null,
+      "reason": "ValueError"
+    },
+    "result_sha256": "0d4376670374c2864919591906d346da067204861ea0fe7dd51360aa0ba47910"
+  },
+  {
+    "job": "test-invoice-total-0a7cd1b1",
+    "trial": "invoice-total__8FzXtxY",
+    "task": "invoice-total",
+    "task_checksum": "7d4484fcdb2a01b281625233987234bbe61a2687ccea7601cf7659c84cfee4bc",
+    "agent": {
+      "name": "spike-control",
+      "version": "1",
+      "model_info": null
+    },
+    "rewards": {
+      "reward": 0.0
+    },
+    "exception_type": null,
+    "evaluation": {
+      "status": "rejected",
+      "acceptance": false,
+      "execution": null,
+      "reason": "ValueError",
+      "normalized_reward": 0
+    },
+    "result_sha256": "151e69c3f8135d5551b718170029d768fbff59218c22f3e48f2387959312b9d9"
+  },
+  {
+    "job": "test-invoice-total-16b21e72",
+    "trial": "invoice-total__JBVEe5y",
+    "task": "invoice-total",
+    "task_checksum": "e85b7f1d31c24b697a6fe03c9859b0277989aaf539815d75d38b6ef74ea994e3",
+    "agent": {
+      "name": "oracle",
+      "version": "1.0.0",
+      "model_info": null
+    },
+    "rewards": {
+      "reward": 1.0
+    },
+    "exception_type": null,
+    "evaluation": {
+      "status": "complete",
+      "acceptance": true,
+      "cases": [
+        {
+          "name": "original-38000",
+          "passed": true
+        },
+        {
+          "name": "alternate-values-zero",
+          "passed": true
+        },
+        {
+          "name": "maximum-safe-total",
+          "passed": true
+        },
+        {
+          "name": "empty",
+          "passed": true
+        },
+        {
+          "name": "duplicate-id",
+          "passed": true
+        },
+        {
+          "name": "mixed-currencies",
+          "passed": true
+        },
+        {
+          "name": "negative-amount",
+          "passed": true
+        },
+        {
+          "name": "fractional-amount",
+          "passed": true
+        },
+        {
+          "name": "unsafe-amount",
+          "passed": true
+        },
+        {
+          "name": "total-overflow",
+          "passed": true
+        }
+      ],
+      "normalized_reward": 1
+    },
+    "result_sha256": "a17affe80e9434aff77ff0160e1a40f3eb0c6e17bbac6c642c6b4f368dc39634"
+  },
+  {
+    "job": "test-invoice-total-1d84c26f",
+    "trial": "invoice-total__5hDcEbR",
+    "task": "invoice-total",
+    "task_checksum": "7d4484fcdb2a01b281625233987234bbe61a2687ccea7601cf7659c84cfee4bc",
+    "agent": {
+      "name": "spike-control",
+      "version": "1",
+      "model_info": null
+    },
+    "rewards": {
+      "reward": 0.0
+    },
+    "exception_type": null,
+    "evaluation": {
+      "status": "complete",
+      "execution": true,
+      "acceptance": false,
+      "cases": [
+        {
+          "name": "original-38000",
+          "passed": false,
+          "reason": "workflow output: submitted {\"currency\":\"AED\",\"invoice_count\":3,\"total_minor\":38000}, contract requires {\"ref\":\"steps.report\"}"
+        },
+        {
+          "name": "alternate-values-zero",
+          "passed": false,
+          "reason": "workflow output: submitted {\"currency\":\"AED\",\"invoice_count\":3,\"total_minor\":38000}, contract requires {\"ref\":\"steps.report\"}"
+        },
+        {
+          "name": "maximum-safe-total",
+          "passed": false,
+          "reason": "workflow output: submitted {\"currency\":\"AED\",\"invoice_count\":3,\"total_minor\":38000}, contract requires {\"ref\":\"steps.report\"}"
+        },
+        {
+          "name": "empty",
+          "passed": true
+        },
+        {
+          "name": "duplicate-id",
+          "passed": true
+        },
+        {
+          "name": "mixed-currencies",
+          "passed": true
+        },
+        {
+          "name": "negative-amount",
+          "passed": true
+        },
+        {
+          "name": "fractional-amount",
+          "passed": true
+        },
+        {
+          "name": "unsafe-amount",
+          "passed": true
+        },
+        {
+          "name": "total-overflow",
+          "passed": true
+        }
+      ],
+      "normalized_reward": 0
+    },
+    "result_sha256": "634a3b7516d187a175da4a1b4d232f994ff5fef5b0357958f8c5d050dc37173a"
+  },
+  {
+    "job": "test-invoice-total-1eed0ed9",
+    "trial": "invoice-total__DPsTMqD",
+    "task": "invoice-total",
+    "task_checksum": "7d4484fcdb2a01b281625233987234bbe61a2687ccea7601cf7659c84cfee4bc",
+    "agent": {
+      "name": "spike-control",
+      "version": "1",
+      "model_info": null
+    },
+    "rewards": {
+      "reward": 0.0
+    },
+    "exception_type": null,
+    "evaluation": {
+      "status": "rejected",
+      "acceptance": false,
+      "execution": null,
+      "reason": "ValueError",
+      "normalized_reward": 0
+    },
+    "result_sha256": "3e56d6829c07de8d0eb56dd6005ff412be23f7de3cde3f284f4c4c64a0925693"
+  },
+  {
+    "job": "test-invoice-total-453056f8",
+    "trial": "invoice-total__T7gNhZw",
+    "task": "invoice-total",
+    "task_checksum": "7d4484fcdb2a01b281625233987234bbe61a2687ccea7601cf7659c84cfee4bc",
+    "agent": {
+      "name": "spike-control",
+      "version": "1",
+      "model_info": null
+    },
+    "rewards": {
+      "reward": 0.0
+    },
+    "exception_type": null,
+    "evaluation": {
+      "status": "rejected",
+      "acceptance": false,
+      "execution": null,
+      "reason": "ValueError",
+      "normalized_reward": 0
+    },
+    "result_sha256": "42e38e636b9fc82e5c3c3980940156a00b7ba98dd91e0611622054eebcc63c95"
+  },
+  {
+    "job": "test-invoice-total-9c62c27b",
+    "trial": "invoice-total__7TorSBT",
+    "task": "invoice-total",
+    "task_checksum": "170a1391307ee590cee2135691089104547767342d2982829483540b705f995e",
+    "agent": {
+      "name": "codex-wrapper-yaml",
+      "version": "spike-1",
+      "model_info": {
+        "name": "spike-fake-codex",
+        "provider": null
+      }
+    },
+    "rewards": {
+      "reward": 1.0
+    },
+    "exception_type": null,
+    "evaluation": {
+      "status": "complete",
+      "execution": true,
+      "acceptance": true,
+      "cases": [
+        {
+          "name": "original-38000",
+          "passed": true
+        },
+        {
+          "name": "alternate-values-zero",
+          "passed": true
+        },
+        {
+          "name": "maximum-safe-total",
+          "passed": true
+        },
+        {
+          "name": "empty",
+          "passed": true
+        },
+        {
+          "name": "duplicate-id",
+          "passed": true
+        },
+        {
+          "name": "mixed-currencies",
+          "passed": true
+        },
+        {
+          "name": "negative-amount",
+          "passed": true
+        },
+        {
+          "name": "fractional-amount",
+          "passed": true
+        },
+        {
+          "name": "unsafe-amount",
+          "passed": true
+        },
+        {
+          "name": "total-overflow",
+          "passed": true
+        }
+      ],
+      "normalized_reward": 1
+    },
+    "result_sha256": "3d62c72e457a05c9417a1f769dcb8bd932b60175e24291a4cc679fef0c634c9c"
+  },
+  {
+    "job": "test-invoice-total-b8526550",
+    "trial": "invoice-total__hJJYLyC",
+    "task": "invoice-total",
+    "task_checksum": "7d4484fcdb2a01b281625233987234bbe61a2687ccea7601cf7659c84cfee4bc",
+    "agent": {
+      "name": "spike-control",
+      "version": "1",
+      "model_info": null
+    },
+    "rewards": {
+      "reward": 0.0
+    },
+    "exception_type": null,
+    "evaluation": {
+      "status": "rejected",
+      "acceptance": false,
+      "execution": null,
+      "reason": "Invalid",
+      "normalized_reward": 0
+    },
+    "result_sha256": "51d370bcea984f60518f67aaa188485452472f6d24a8838cd3f7e5e45c372ab4"
+  },
+  {
+    "job": "test-invoice-total-d368737e",
+    "trial": "invoice-total__L89mgpL",
+    "task": "invoice-total",
+    "task_checksum": "e85b7f1d31c24b697a6fe03c9859b0277989aaf539815d75d38b6ef74ea994e3",
+    "agent": {
+      "name": "nop",
+      "version": "1.0.0",
+      "model_info": null
+    },
+    "rewards": {
+      "reward": 0.0
+    },
+    "exception_type": null,
+    "evaluation": {
+      "status": "rejected",
+      "acceptance": false,
+      "execution": null,
+      "reason": "ValueError",
+      "normalized_reward": 0
+    },
+    "result_sha256": "2d1077d0f866fdc7cf1db719eff51ec87e6fb882edd55437bf61a7955915d4a6"
+  },
+  {
+    "job": "test-invoice-total-e1096ca2",
+    "trial": "invoice-total__zgSVkV6",
+    "task": "invoice-total",
+    "task_checksum": "7d4484fcdb2a01b281625233987234bbe61a2687ccea7601cf7659c84cfee4bc",
+    "agent": {
+      "name": "spike-control",
+      "version": "1",
+      "model_info": null
+    },
+    "rewards": {
+      "reward": 1.0
+    },
+    "exception_type": null,
+    "evaluation": {
+      "status": "complete",
+      "execution": true,
+      "acceptance": true,
+      "cases": [
+        {
+          "name": "original-38000",
+          "passed": true
+        },
+        {
+          "name": "alternate-values-zero",
+          "passed": true
+        },
+        {
+          "name": "maximum-safe-total",
+          "passed": true
+        },
+        {
+          "name": "empty",
+          "passed": true
+        },
+        {
+          "name": "duplicate-id",
+          "passed": true
+        },
+        {
+          "name": "mixed-currencies",
+          "passed": true
+        },
+        {
+          "name": "negative-amount",
+          "passed": true
+        },
+        {
+          "name": "fractional-amount",
+          "passed": true
+        },
+        {
+          "name": "unsafe-amount",
+          "passed": true
+        },
+        {
+          "name": "total-overflow",
+          "passed": true
+        }
+      ],
+      "normalized_reward": 1
+    },
+    "result_sha256": "d1aa18a507d7c5e9192098ecceb2bab3a55f8b57c655319bf9b92518731ec20f"
+  }
+]

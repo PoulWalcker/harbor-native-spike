@@ -1,0 +1,25 @@
+  1/1 Mean: 0.732 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 0:01:19 0:00:00
+adhoc • oracle
+┏━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━┓
+┃ Trials ┃ Exceptions ┃  Mean ┃
+┡━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━┩
+│      1 │          0 │ 0.732 │
+└────────┴────────────┴───────┘
+
+┏━━━━━━━━┳━━━━━━━┓
+┃ Reward ┃ Count ┃
+┡━━━━━━━━╇━━━━━━━┩
+│ 0.732  │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 1m 19s
+Results written to 
+/Users/pashvel/Desktop/harbor-native-spike/jobs/test-checkout-recovery-8423e01a/
+result.json
+Inspect results by running `harbor view 
+/Users/pashvel/Desktop/harbor-native-spike/jobs`
+Share results by running `harbor upload 
+/Users/pashvel/Desktop/harbor-native-spike/jobs/test-checkout-recovery-8423e01a`
+
+fatal: bad revision 'HEAD'

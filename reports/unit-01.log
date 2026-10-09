@@ -1,0 +1,35 @@
+warning: `VIRTUAL_ENV=/Users/pashvel/Desktop/work/backend/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+....................F.............                                       [100%]
+=================================== FAILURES ===================================
+___ test_real_llm_nodes_are_compiled_and_invalid_plan_stops_before_execution ___
+
+    def test_real_llm_nodes_are_compiled_and_invalid_plan_stops_before_execution():
+        cfg=read(ROOT/'tests/fixtures/checkout-llm.yaml')
+        bindings=read(ROOT/'tasks/checkout-recovery/tests/bindings.yaml')['operations']
+>       compiled=compile_case(cfg,bindings,CompileOptions(llm_mode='live',bridge_url='http://127.0.0.1:8765',operation_url='http://simulator:8000/tools'),(ROOT/'tasks/checkout-recovery/tests/operations.js').read_text())
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_contracts.py:99: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/native_spike/verifier.py:38: in compile_case
+    document, mapping = compile_n8n(config, bindings, operation_source=source, **asdict(options))
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/native_spike/compile/n8n.py:90: in compile_n8n
+    order, deps = validate(cfg, bindings)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+src/native_spike/profile.py:317: in validate
+    check(w["kind"] != "Pipeline" or step["kind"] == "Script", f"{label}.kind: Pipeline cannot include LLM steps")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False
+message = 'workflow.steps[3].kind: Pipeline cannot include LLM steps'
+
+    def check(ok: object, message: str) -> None:
+        if not ok:
+>           raise Invalid(message)
+E           native_spike.profile.Invalid: workflow.steps[3].kind: Pipeline cannot include LLM steps
+
+src/native_spike/profile.py:33: Invalid
+=========================== short test summary info ============================
+FAILED tests/test_contracts.py::test_real_llm_nodes_are_compiled_and_invalid_plan_stops_before_execution
+1 failed, 33 passed in 2.55s

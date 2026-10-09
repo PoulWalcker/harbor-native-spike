@@ -1,0 +1,1115 @@
+{
+  "method": "Physical lines including comments/blank lines. Python, JS, shell, YAML, TOML and Dockerfiles; JSON task assets counted separately in bytes. No third-party/generated/cache/historical evidence. Tests separate. Not feature-normalized.",
+  "original": {
+    "json_assets": {
+      "files": 7,
+      "bytes": 10254
+    },
+    "areas": {
+      "Task loading packaging and Harbor glue": 1354,
+      "Other shared/runtime code": 564,
+      "YAML profile and compiler": 1155,
+      "Model integration": 850,
+      "Independent evaluation": 3925,
+      "n8n execution": 278,
+      "Custom coordination and experiments": 4757,
+      "Task/domain assets": 597,
+      "Checkout world and transport": 600,
+      "Automated tests": 13861
+    },
+    "total": 27941,
+    "production_total": 14080,
+    "files": {
+      "src/sapi_config_lab/benchmark.py": {
+        "area": "Task loading packaging and Harbor glue",
+        "lines": 302
+      },
+      "src/sapi_config_lab/paths.py": {
+        "area": "Other shared/runtime code",
+        "lines": 37
+      },
+      "src/sapi_config_lab/profile.py": {
+        "area": "YAML profile and compiler",
+        "lines": 474
+      },
+      "src/sapi_config_lab/net.py": {
+        "area": "Other shared/runtime code",
+        "lines": 12
+      },
+      "src/sapi_config_lab/__init__.py": {
+        "area": "Other shared/runtime code",
+        "lines": 0
+      },
+      "src/sapi_config_lab/pinned_source.py": {
+        "area": "Other shared/runtime code",
+        "lines": 125
+      },
+      "src/sapi_config_lab/contracts.py": {
+        "area": "Other shared/runtime code",
+        "lines": 113
+      },
+      "src/sapi_config_lab/benchmark_loading.py": {
+        "area": "Task loading packaging and Harbor glue",
+        "lines": 158
+      },
+      "src/sapi_config_lab/evidence.py": {
+        "area": "Other shared/runtime code",
+        "lines": 61
+      },
+      "src/sapi_config_lab/__main__.py": {
+        "area": "Other shared/runtime code",
+        "lines": 3
+      },
+      "src/sapi_config_lab/wrapper_audit.py": {
+        "area": "Model integration",
+        "lines": 31
+      },
+      "src/sapi_config_lab/author/__init__.py": {
+        "area": "Model integration",
+        "lines": 0
+      },
+      "src/sapi_config_lab/author/rebuilder.py": {
+        "area": "Model integration",
+        "lines": 139
+      },
+      "src/sapi_config_lab/evaluate/review_export.py": {
+        "area": "Independent evaluation",
+        "lines": 261
+      },
+      "src/sapi_config_lab/evaluate/records.py": {
+        "area": "Independent evaluation",
+        "lines": 171
+      },
+      "src/sapi_config_lab/evaluate/__init__.py": {
+        "area": "Independent evaluation",
+        "lines": 0
+      },
+      "src/sapi_config_lab/compile/n8n.py": {
+        "area": "YAML profile and compiler",
+        "lines": 328
+      },
+      "src/sapi_config_lab/compile/__init__.py": {
+        "area": "YAML profile and compiler",
+        "lines": 0
+      },
+      "src/sapi_config_lab/compile/refinement.py": {
+        "area": "YAML profile and compiler",
+        "lines": 208
+      },
+      "src/sapi_config_lab/compile/runtime-fragment.js": {
+        "area": "YAML profile and compiler",
+        "lines": 145
+      },
+      "src/sapi_config_lab/harbor_integration/runner.py": {
+        "area": "Task loading packaging and Harbor glue",
+        "lines": 63
+      },
+      "src/sapi_config_lab/harbor_integration/tasks.py": {
+        "area": "Task loading packaging and Harbor glue",
+        "lines": 220
+      },
+      "src/sapi_config_lab/harbor_integration/yaml_agent.py": {
+        "area": "Model integration",
+        "lines": 94
+      },
+      "src/sapi_config_lab/harbor_integration/submission.py": {
+        "area": "Task loading packaging and Harbor glue",
+        "lines": 55
+      },
+      "src/sapi_config_lab/harbor_integration/__init__.py": {
+        "area": "Task loading packaging and Harbor glue",
+        "lines": 1
+      },
+      "src/sapi_config_lab/harbor_integration/model_wrapper.py": {
+        "area": "Model integration",
+        "lines": 112
+      },
+      "src/sapi_config_lab/execute/agency.py": {
+        "area": "Model integration",
+        "lines": 474
+      },
+      "src/sapi_config_lab/execute/host.py": {
+        "area": "Other shared/runtime code",
+        "lines": 102
+      },
+      "src/sapi_config_lab/execute/n8n.py": {
+        "area": "n8n execution",
+        "lines": 278
+      },
+      "src/sapi_config_lab/execute/__init__.py": {
+        "area": "Other shared/runtime code",
+        "lines": 0
+      },
+      "src/sapi_config_lab/execute/ui_n8n.py": {
+        "area": "Other shared/runtime code",
+        "lines": 69
+      },
+      "src/sapi_config_lab/coordinate/controls.py": {
+        "area": "Custom coordination and experiments",
+        "lines": 133
+      },
+      "src/sapi_config_lab/coordinate/benchmark_authoring.py": {
+        "area": "Custom coordination and experiments",
+        "lines": 46
+      },
+      "src/sapi_config_lab/coordinate/wrapper.py": {
+        "area": "Custom coordination and experiments",
+        "lines": 5
+      },
+      "src/sapi_config_lab/coordinate/backend.py": {
+        "area": "Custom coordination and experiments",
+        "lines": 39
+      },
+      "src/sapi_config_lab/coordinate/transport.py": {
+        "area": "Custom coordination and experiments",
+        "lines": 306
+      },
+      "src/sapi_config_lab/coordinate/generate.py": {
+        "area": "Custom coordination and experiments",
+        "lines": 231
+      },
+      "src/sapi_config_lab/coordinate/ui.py": {
+        "area": "Custom coordination and experiments",
+        "lines": 523
+      },
+      "src/sapi_config_lab/coordinate/evaluation.py": {
+        "area": "Custom coordination and experiments",
+        "lines": 186
+      },
+      "src/sapi_config_lab/coordinate/ledger.py": {
+        "area": "Custom coordination and experiments",
+        "lines": 167
+      },
+      "src/sapi_config_lab/coordinate/__init__.py": {
+        "area": "Custom coordination and experiments",
+        "lines": 0
+      },
+      "src/sapi_config_lab/coordinate/cases.py": {
+        "area": "Custom coordination and experiments",
+        "lines": 154
+      },
+      "src/sapi_config_lab/coordinate/packages.py": {
+        "area": "Custom coordination and experiments",
+        "lines": 181
+      },
+      "src/sapi_config_lab/coordinate/compilation.py": {
+        "area": "Custom coordination and experiments",
+        "lines": 58
+      },
+      "src/sapi_config_lab/coordinate/replay.py": {
+        "area": "Custom coordination and experiments",
+        "lines": 173
+      },
+      "src/sapi_config_lab/coordinate/observe.py": {
+        "area": "Custom coordination and experiments",
+        "lines": 130
+      },
+      "src/sapi_config_lab/coordinate/cli.py": {
+        "area": "Custom coordination and experiments",
+        "lines": 253
+      },
+      "src/sapi_config_lab/coordinate/historical_evaluation.py": {
+        "area": "Custom coordination and experiments",
+        "lines": 173
+      },
+      "src/sapi_config_lab/coordinate/benchmark_packages.py": {
+        "area": "Custom coordination and experiments",
+        "lines": 114
+      },
+      "src/sapi_config_lab/coordinate/lifecycle.py": {
+        "area": "Custom coordination and experiments",
+        "lines": 762
+      },
+      "src/sapi_config_lab/coordinate/live_evidence.py": {
+        "area": "Custom coordination and experiments",
+        "lines": 171
+      },
+      "src/sapi_config_lab/coordinate/live.py": {
+        "area": "Custom coordination and experiments",
+        "lines": 446
+      },
+      "src/sapi_config_lab/coordinate/benchmark_discovery.py": {
+        "area": "Custom coordination and experiments",
+        "lines": 15
+      },
+      "src/sapi_config_lab/coordinate/provenance.py": {
+        "area": "Custom coordination and experiments",
+        "lines": 65
+      },
+      "src/sapi_config_lab/coordinate/benchmark_worker.py": {
+        "area": "Custom coordination and experiments",
+        "lines": 146
+      },
+      "src/sapi_config_lab/coordinate/runs.py": {
+        "area": "Custom coordination and experiments",
+        "lines": 280
+      },
+      "src/sapi_config_lab/harbor_integration/runtime/Dockerfile": {
+        "area": "Task loading packaging and Harbor glue",
+        "lines": 10
+      },
+      "verification/rubric.py": {
+        "area": "Independent evaluation",
+        "lines": 488
+      },
+      "verification/fixture.py": {
+        "area": "Independent evaluation",
+        "lines": 34
+      },
+      "verification/rubric_facts.py": {
+        "area": "Independent evaluation",
+        "lines": 116
+      },
+      "verification/roles.py": {
+        "area": "Independent evaluation",
+        "lines": 222
+      },
+      "verification/__init__.py": {
+        "area": "Independent evaluation",
+        "lines": 1
+      },
+      "verification/refinement.py": {
+        "area": "Independent evaluation",
+        "lines": 335
+      },
+      "verification/lifecycle.py": {
+        "area": "Independent evaluation",
+        "lines": 359
+      },
+      "verification/contracts.py": {
+        "area": "Independent evaluation",
+        "lines": 78
+      },
+      "verification/n8n_provenance.py": {
+        "area": "Independent evaluation",
+        "lines": 398
+      },
+      "verification/verify.py": {
+        "area": "Independent evaluation",
+        "lines": 569
+      },
+      "verification/lifecycle_submission.py": {
+        "area": "Independent evaluation",
+        "lines": 87
+      },
+      "benchmarks/01-invoice-total/bindings.yaml": {
+        "area": "Task/domain assets",
+        "lines": 215
+      },
+      "benchmarks/01-invoice-total/config.yaml": {
+        "area": "Task/domain assets",
+        "lines": 45
+      },
+      "benchmarks/01-invoice-total/verifier.sh": {
+        "area": "Task/domain assets",
+        "lines": 3
+      },
+      "benchmarks/01-invoice-total/task.toml": {
+        "area": "Task/domain assets",
+        "lines": 22
+      },
+      "benchmarks/01-invoice-total/operations.js": {
+        "area": "Task/domain assets",
+        "lines": 66
+      },
+      "benchmarks/10-checkout-recovery/bindings.yaml": {
+        "area": "Task/domain assets",
+        "lines": 150
+      },
+      "benchmarks/10-checkout-recovery/config.yaml": {
+        "area": "Task/domain assets",
+        "lines": 64
+      },
+      "benchmarks/10-checkout-recovery/verifier.sh": {
+        "area": "Task/domain assets",
+        "lines": 3
+      },
+      "benchmarks/10-checkout-recovery/task.toml": {
+        "area": "Task/domain assets",
+        "lines": 26
+      },
+      "benchmarks/10-checkout-recovery/operations.js": {
+        "area": "Task/domain assets",
+        "lines": 3
+      },
+      "benchmarks/10-checkout-recovery/environment/docker-compose.yaml": {
+        "area": "Checkout world and transport",
+        "lines": 32
+      },
+      "benchmarks/10-checkout-recovery/environment/hooks.py": {
+        "area": "Checkout world and transport",
+        "lines": 185
+      },
+      "benchmarks/10-checkout-recovery/environment/server.py": {
+        "area": "Checkout world and transport",
+        "lines": 344
+      },
+      "benchmarks/10-checkout-recovery/environment/__init__.py": {
+        "area": "Checkout world and transport",
+        "lines": 0
+      },
+      "benchmarks/10-checkout-recovery/environment/verifier.Dockerfile": {
+        "area": "Checkout world and transport",
+        "lines": 2
+      },
+      "benchmarks/10-checkout-recovery/environment/install.py": {
+        "area": "Checkout world and transport",
+        "lines": 37
+      },
+      "benchmarks/10-checkout-recovery/evaluation/scoring.py": {
+        "area": "Independent evaluation",
+        "lines": 476
+      },
+      "benchmarks/10-checkout-recovery/evaluation/__init__.py": {
+        "area": "Independent evaluation",
+        "lines": 0
+      },
+      "benchmarks/10-checkout-recovery/evaluation/evaluator.py": {
+        "area": "Independent evaluation",
+        "lines": 108
+      },
+      "benchmarks/10-checkout-recovery/evaluation/calibration.py": {
+        "area": "Independent evaluation",
+        "lines": 109
+      },
+      "benchmarks/01-invoice-total/evaluation/__init__.py": {
+        "area": "Independent evaluation",
+        "lines": 0
+      },
+      "benchmarks/01-invoice-total/evaluation/evaluator.py": {
+        "area": "Independent evaluation",
+        "lines": 113
+      },
+      "harbor/templates/solve.sh": {
+        "area": "Other shared/runtime code",
+        "lines": 4
+      },
+      "harbor/templates/task.toml": {
+        "area": "Other shared/runtime code",
+        "lines": 21
+      },
+      "harbor/templates/test.sh": {
+        "area": "Other shared/runtime code",
+        "lines": 17
+      },
+      "infra/verify_spec_source.py": {
+        "area": "Task loading packaging and Harbor glue",
+        "lines": 120
+      },
+      "infra/check_types.py": {
+        "area": "Task loading packaging and Harbor glue",
+        "lines": 25
+      },
+      "infra/Dockerfile": {
+        "area": "Task loading packaging and Harbor glue",
+        "lines": 26
+      },
+      "infra/build_resources.py": {
+        "area": "Task loading packaging and Harbor glue",
+        "lines": 28
+      },
+      "infra/check_distribution.py": {
+        "area": "Task loading packaging and Harbor glue",
+        "lines": 242
+      },
+      "tests/test_native_budgets.py": {
+        "area": "Automated tests",
+        "lines": 28
+      },
+      "tests/test_simulator_environment.py": {
+        "area": "Automated tests",
+        "lines": 121
+      },
+      "tests/test_legacy_records.py": {
+        "area": "Automated tests",
+        "lines": 238
+      },
+      "tests/test_review_export.py": {
+        "area": "Automated tests",
+        "lines": 94
+      },
+      "tests/test_workflows.py": {
+        "area": "Automated tests",
+        "lines": 345
+      },
+      "tests/test_fixture_ownership.py": {
+        "area": "Automated tests",
+        "lines": 60
+      },
+      "tests/checkout_fault_probe.py": {
+        "area": "Automated tests",
+        "lines": 177
+      },
+      "tests/test_checkout_package_evaluator.py": {
+        "area": "Automated tests",
+        "lines": 215
+      },
+      "tests/test_checkout_reporting.py": {
+        "area": "Automated tests",
+        "lines": 56
+      },
+      "tests/test_benchmark_worker.py": {
+        "area": "Automated tests",
+        "lines": 113
+      },
+      "tests/test_verification_contract.py": {
+        "area": "Automated tests",
+        "lines": 212
+      },
+      "tests/test_lifecycle.py": {
+        "area": "Automated tests",
+        "lines": 415
+      },
+      "tests/test_rebuilder.py": {
+        "area": "Automated tests",
+        "lines": 101
+      },
+      "tests/test_lifecycle_verification.py": {
+        "area": "Automated tests",
+        "lines": 387
+      },
+      "tests/test_invoice_package.py": {
+        "area": "Automated tests",
+        "lines": 247
+      },
+      "tests/test_packaging.py": {
+        "area": "Automated tests",
+        "lines": 265
+      },
+      "tests/test_harbor_runner.py": {
+        "area": "Automated tests",
+        "lines": 167
+      },
+      "tests/test_benchmark_manifest.py": {
+        "area": "Automated tests",
+        "lines": 358
+      },
+      "tests/test_profile_validation.py": {
+        "area": "Automated tests",
+        "lines": 99
+      },
+      "tests/test_rubric_wiring.py": {
+        "area": "Automated tests",
+        "lines": 428
+      },
+      "tests/test_refinement_admission.py": {
+        "area": "Automated tests",
+        "lines": 89
+      },
+      "tests/test_hosted_preflight.py": {
+        "area": "Automated tests",
+        "lines": 163
+      },
+      "tests/test_operation_bundle.py": {
+        "area": "Automated tests",
+        "lines": 151
+      },
+      "tests/__init__.py": {
+        "area": "Automated tests",
+        "lines": 0
+      },
+      "tests/test_fixture_bindings.py": {
+        "area": "Automated tests",
+        "lines": 73
+      },
+      "tests/test_ui.py": {
+        "area": "Automated tests",
+        "lines": 277
+      },
+      "tests/test_selection.py": {
+        "area": "Automated tests",
+        "lines": 166
+      },
+      "tests/test_benchmark_packages.py": {
+        "area": "Automated tests",
+        "lines": 369
+      },
+      "tests/test_live.py": {
+        "area": "Automated tests",
+        "lines": 418
+      },
+      "tests/test_rubric.py": {
+        "area": "Automated tests",
+        "lines": 1034
+      },
+      "tests/test_check_command.py": {
+        "area": "Automated tests",
+        "lines": 47
+      },
+      "tests/test_simulator_hosting.py": {
+        "area": "Automated tests",
+        "lines": 67
+      },
+      "tests/test_checkout_package_environment.py": {
+        "area": "Automated tests",
+        "lines": 326
+      },
+      "tests/test_refinement_verification.py": {
+        "area": "Automated tests",
+        "lines": 345
+      },
+      "tests/test_backend_contract.py": {
+        "area": "Automated tests",
+        "lines": 157
+      },
+      "tests/test_judge_calibration.py": {
+        "area": "Automated tests",
+        "lines": 69
+      },
+      "tests/test_refinement.py": {
+        "area": "Automated tests",
+        "lines": 126
+      },
+      "tests/test_occurrences.py": {
+        "area": "Automated tests",
+        "lines": 223
+      },
+      "tests/test_agency.py": {
+        "area": "Automated tests",
+        "lines": 200
+      },
+      "tests/test_retirement.py": {
+        "area": "Automated tests",
+        "lines": 64
+      },
+      "tests/test_transport_controls.py": {
+        "area": "Automated tests",
+        "lines": 211
+      },
+      "tests/test_n8n_evidence.py": {
+        "area": "Automated tests",
+        "lines": 120
+      },
+      "tests/test_task_evaluation.py": {
+        "area": "Automated tests",
+        "lines": 271
+      },
+      "tests/test_checkout_failure_evidence.py": {
+        "area": "Automated tests",
+        "lines": 219
+      },
+      "tests/test_role_lineage.py": {
+        "area": "Automated tests",
+        "lines": 183
+      },
+      "tests/test_checkout_isolation.py": {
+        "area": "Automated tests",
+        "lines": 274
+      },
+      "tests/test_harbor_checkout.py": {
+        "area": "Automated tests",
+        "lines": 669
+      },
+      "tests/test_boundaries.py": {
+        "area": "Automated tests",
+        "lines": 219
+      },
+      "tests/test_runs.py": {
+        "area": "Automated tests",
+        "lines": 300
+      },
+      "tests/test_occurrence_budget.py": {
+        "area": "Automated tests",
+        "lines": 128
+      },
+      "tests/test_operation_transport.py": {
+        "area": "Automated tests",
+        "lines": 228
+      },
+      "tests/test_spec_source.py": {
+        "area": "Automated tests",
+        "lines": 58
+      },
+      "tests/test_evaluator_contracts.py": {
+        "area": "Automated tests",
+        "lines": 70
+      },
+      "tests/test_generation.py": {
+        "area": "Automated tests",
+        "lines": 125
+      },
+      "tests/test_harbor_settings.py": {
+        "area": "Automated tests",
+        "lines": 122
+      },
+      "tests/test_benchmark_extensibility.py": {
+        "area": "Automated tests",
+        "lines": 255
+      },
+      "tests/test_cli_composition.py": {
+        "area": "Automated tests",
+        "lines": 158
+      },
+      "tests/test_evidence_boundary.py": {
+        "area": "Automated tests",
+        "lines": 267
+      },
+      "tests/support/checkout_evaluation.py": {
+        "area": "Automated tests",
+        "lines": 14
+      },
+      "tests/support/scale_probe.py": {
+        "area": "Automated tests",
+        "lines": 101
+      },
+      "tests/support/pinned.py": {
+        "area": "Automated tests",
+        "lines": 10
+      },
+      "tests/support/checkout_controls.py": {
+        "area": "Automated tests",
+        "lines": 15
+      },
+      "tests/support/native.py": {
+        "area": "Automated tests",
+        "lines": 91
+      },
+      "tests/support/competitor-report-projected-output.yaml": {
+        "area": "Automated tests",
+        "lines": 66
+      },
+      "tests/support/verifying.py": {
+        "area": "Automated tests",
+        "lines": 49
+      },
+      "tests/support/invoice.py": {
+        "area": "Automated tests",
+        "lines": 25
+      },
+      "tests/support/native-transport/task.toml": {
+        "area": "Automated tests",
+        "lines": 9
+      },
+      "tests/support/lifecycle/bindings.yaml": {
+        "area": "Automated tests",
+        "lines": 8
+      },
+      "tests/support/lifecycle/native_control.py": {
+        "area": "Automated tests",
+        "lines": 79
+      },
+      "tests/support/lifecycle/config.yaml": {
+        "area": "Automated tests",
+        "lines": 70
+      },
+      "tests/support/lifecycle/__init__.py": {
+        "area": "Automated tests",
+        "lines": 59
+      },
+      "tests/support/lifecycle/operations.js": {
+        "area": "Automated tests",
+        "lines": 4
+      },
+      "tests/support/refinement/bindings.yaml": {
+        "area": "Automated tests",
+        "lines": 32
+      },
+      "tests/support/refinement/config.yaml": {
+        "area": "Automated tests",
+        "lines": 65
+      },
+      "tests/support/refinement/__init__.py": {
+        "area": "Automated tests",
+        "lines": 47
+      },
+      "tests/support/refinement/native.py": {
+        "area": "Automated tests",
+        "lines": 96
+      },
+      "tests/support/refinement/operations.js": {
+        "area": "Automated tests",
+        "lines": 10
+      },
+      "tests/support/graphs/repeated.yaml": {
+        "area": "Automated tests",
+        "lines": 55
+      },
+      "tests/support/graphs/branch.yaml": {
+        "area": "Automated tests",
+        "lines": 58
+      },
+      "tests/support/graphs/refinement.yaml": {
+        "area": "Automated tests",
+        "lines": 51
+      },
+      "tests/support/graphs/guarded.yaml": {
+        "area": "Automated tests",
+        "lines": 75
+      },
+      "tests/support/extensibility/bindings.yaml": {
+        "area": "Automated tests",
+        "lines": 32
+      },
+      "tests/support/extensibility/config.yaml": {
+        "area": "Automated tests",
+        "lines": 30
+      },
+      "tests/support/extensibility/verifier.sh": {
+        "area": "Automated tests",
+        "lines": 3
+      },
+      "tests/support/extensibility/task.toml": {
+        "area": "Automated tests",
+        "lines": 25
+      },
+      "tests/support/extensibility/operations.js": {
+        "area": "Automated tests",
+        "lines": 8
+      },
+      "tests/support/rubric/__init__.py": {
+        "area": "Automated tests",
+        "lines": 34
+      },
+      "tests/support/extensibility/environment/docker-compose.yaml": {
+        "area": "Automated tests",
+        "lines": 22
+      },
+      "tests/support/extensibility/environment/hooks.py": {
+        "area": "Automated tests",
+        "lines": 35
+      },
+      "tests/support/extensibility/environment/server.py": {
+        "area": "Automated tests",
+        "lines": 55
+      },
+      "tests/support/extensibility/evaluation/evaluator.py": {
+        "area": "Automated tests",
+        "lines": 46
+      },
+      "tests/support/native-transport/tests/bindings.yaml": {
+        "area": "Automated tests",
+        "lines": 66
+      },
+      "tests/support/native-transport/tests/config.yaml": {
+        "area": "Automated tests",
+        "lines": 37
+      },
+      "tests/support/native-transport/tests/operations.js": {
+        "area": "Automated tests",
+        "lines": 1
+      },
+      "tests/support/native-transport/tests/test.sh": {
+        "area": "Automated tests",
+        "lines": 8
+      },
+      "tests/support/native-transport/environment/docker-compose.yaml": {
+        "area": "Automated tests",
+        "lines": 3
+      },
+      "pyproject.toml": {
+        "area": "Task loading packaging and Harbor glue",
+        "lines": 96
+      },
+      "run.sh": {
+        "area": "Task loading packaging and Harbor glue",
+        "lines": 4
+      },
+      "run-generation.sh": {
+        "area": "Task loading packaging and Harbor glue",
+        "lines": 4
+      }
+    }
+  },
+  "spike": {
+    "json_assets": {
+      "files": 3,
+      "bytes": 4566
+    },
+    "areas": {
+      "Model integration": 638,
+      "Independent evaluation": 1768,
+      "YAML profile and compiler": 1365,
+      "Other shared/runtime code": 390,
+      "n8n execution": 303,
+      "Task/domain assets": 1058,
+      "Checkout world and transport": 566,
+      "Task loading packaging and Harbor glue": 245,
+      "Automated tests": 1361
+    },
+    "total": 7694,
+    "production_total": 6333,
+    "files": {
+      "src/native_spike/fake_transport.py": {
+        "area": "Model integration",
+        "lines": 45
+      },
+      "src/native_spike/checkout_scoring.py": {
+        "area": "Independent evaluation",
+        "lines": 512
+      },
+      "src/native_spike/profile.py": {
+        "area": "YAML profile and compiler",
+        "lines": 616
+      },
+      "src/native_spike/net.py": {
+        "area": "Other shared/runtime code",
+        "lines": 12
+      },
+      "src/native_spike/__init__.py": {
+        "area": "Other shared/runtime code",
+        "lines": 0
+      },
+      "src/native_spike/replay.py": {
+        "area": "Independent evaluation",
+        "lines": 59
+      },
+      "src/native_spike/agent.py": {
+        "area": "Model integration",
+        "lines": 88
+      },
+      "src/native_spike/pinned_source.py": {
+        "area": "Other shared/runtime code",
+        "lines": 105
+      },
+      "src/native_spike/contracts.py": {
+        "area": "Other shared/runtime code",
+        "lines": 100
+      },
+      "src/native_spike/identity.py": {
+        "area": "Other shared/runtime code",
+        "lines": 40
+      },
+      "src/native_spike/evidence.py": {
+        "area": "Other shared/runtime code",
+        "lines": 49
+      },
+      "src/native_spike/verifier.py": {
+        "area": "Other shared/runtime code",
+        "lines": 84
+      },
+      "src/native_spike/wrapper_audit.py": {
+        "area": "Model integration",
+        "lines": 31
+      },
+      "src/acceptance/roles.py": {
+        "area": "Independent evaluation",
+        "lines": 273
+      },
+      "src/acceptance/__init__.py": {
+        "area": "Independent evaluation",
+        "lines": 0
+      },
+      "src/acceptance/contracts.py": {
+        "area": "Independent evaluation",
+        "lines": 81
+      },
+      "src/acceptance/n8n_provenance.py": {
+        "area": "Independent evaluation",
+        "lines": 561
+      },
+      "src/native_spike/compile/n8n.py": {
+        "area": "YAML profile and compiler",
+        "lines": 385
+      },
+      "src/native_spike/compile/__init__.py": {
+        "area": "YAML profile and compiler",
+        "lines": 0
+      },
+      "src/native_spike/compile/refinement.py": {
+        "area": "YAML profile and compiler",
+        "lines": 219
+      },
+      "src/native_spike/compile/runtime-fragment.js": {
+        "area": "YAML profile and compiler",
+        "lines": 145
+      },
+      "src/native_spike/execute/agency.py": {
+        "area": "Model integration",
+        "lines": 474
+      },
+      "src/native_spike/execute/n8n.py": {
+        "area": "n8n execution",
+        "lines": 303
+      },
+      "src/native_spike/execute/__init__.py": {
+        "area": "Other shared/runtime code",
+        "lines": 0
+      },
+      "tasks/checkout-recovery/task.toml": {
+        "area": "Task/domain assets",
+        "lines": 23
+      },
+      "tasks/invoice-total/task.toml": {
+        "area": "Task/domain assets",
+        "lines": 23
+      },
+      "tasks/invoice-total/tests/docker-compose.yaml": {
+        "area": "Task/domain assets",
+        "lines": 3
+      },
+      "tasks/invoice-total/tests/bindings.yaml": {
+        "area": "Task/domain assets",
+        "lines": 215
+      },
+      "tasks/invoice-total/tests/Dockerfile": {
+        "area": "Task/domain assets",
+        "lines": 3
+      },
+      "tasks/invoice-total/tests/business.py": {
+        "area": "Independent evaluation",
+        "lines": 48
+      },
+      "tasks/invoice-total/tests/verify.py": {
+        "area": "Independent evaluation",
+        "lines": 98
+      },
+      "tasks/invoice-total/tests/operations.js": {
+        "area": "Task/domain assets",
+        "lines": 66
+      },
+      "tasks/invoice-total/tests/test.sh": {
+        "area": "Task/domain assets",
+        "lines": 5
+      },
+      "tasks/invoice-total/solution/solve.sh": {
+        "area": "Task/domain assets",
+        "lines": 4
+      },
+      "tasks/invoice-total/solution/config.yaml": {
+        "area": "Task/domain assets",
+        "lines": 45
+      },
+      "tasks/invoice-total/environment/docker-compose.yaml": {
+        "area": "Task/domain assets",
+        "lines": 3
+      },
+      "tasks/invoice-total/environment/Dockerfile": {
+        "area": "Task/domain assets",
+        "lines": 2
+      },
+      "tasks/invoice-total/environment/public/bindings.yaml": {
+        "area": "Task/domain assets",
+        "lines": 215
+      },
+      "tasks/checkout-recovery/tests/world.py": {
+        "area": "Checkout world and transport",
+        "lines": 373
+      },
+      "tasks/checkout-recovery/tests/docker-compose.yaml": {
+        "area": "Task/domain assets",
+        "lines": 29
+      },
+      "tasks/checkout-recovery/tests/bindings.yaml": {
+        "area": "Task/domain assets",
+        "lines": 150
+      },
+      "tasks/checkout-recovery/tests/Dockerfile": {
+        "area": "Task/domain assets",
+        "lines": 4
+      },
+      "tasks/checkout-recovery/tests/install.py": {
+        "area": "Task/domain assets",
+        "lines": 37
+      },
+      "tasks/checkout-recovery/tests/verify.py": {
+        "area": "Independent evaluation",
+        "lines": 136
+      },
+      "tasks/checkout-recovery/tests/operations.js": {
+        "area": "Task/domain assets",
+        "lines": 3
+      },
+      "tasks/checkout-recovery/tests/test.sh": {
+        "area": "Task/domain assets",
+        "lines": 5
+      },
+      "tasks/checkout-recovery/tests/snapshot.py": {
+        "area": "Checkout world and transport",
+        "lines": 193
+      },
+      "tasks/checkout-recovery/solution/solve.sh": {
+        "area": "Task/domain assets",
+        "lines": 4
+      },
+      "tasks/checkout-recovery/solution/config.yaml": {
+        "area": "Task/domain assets",
+        "lines": 64
+      },
+      "tasks/checkout-recovery/environment/docker-compose.yaml": {
+        "area": "Task/domain assets",
+        "lines": 3
+      },
+      "tasks/checkout-recovery/environment/Dockerfile": {
+        "area": "Task/domain assets",
+        "lines": 2
+      },
+      "tasks/checkout-recovery/environment/public/bindings.yaml": {
+        "area": "Task/domain assets",
+        "lines": 150
+      },
+      "infra/measure.py": {
+        "area": "Task loading packaging and Harbor glue",
+        "lines": 120
+      },
+      "infra/runtime.Dockerfile": {
+        "area": "Task loading packaging and Harbor glue",
+        "lines": 13
+      },
+      "infra/build.sh": {
+        "area": "Task loading packaging and Harbor glue",
+        "lines": 6
+      },
+      "infra/fetch_upstream.py": {
+        "area": "Task loading packaging and Harbor glue",
+        "lines": 13
+      },
+      "infra/agent.Dockerfile": {
+        "area": "Task loading packaging and Harbor glue",
+        "lines": 6
+      },
+      "public/submission.py": {
+        "area": "Task loading packaging and Harbor glue",
+        "lines": 68
+      },
+      "tests/test_contracts.py": {
+        "area": "Automated tests",
+        "lines": 293
+      },
+      "tests/test_security.py": {
+        "area": "Automated tests",
+        "lines": 77
+      },
+      "tests/support.py": {
+        "area": "Automated tests",
+        "lines": 16
+      },
+      "tests/control_agent.py": {
+        "area": "Automated tests",
+        "lines": 66
+      },
+      "tests/test_docker_security.py": {
+        "area": "Automated tests",
+        "lines": 181
+      },
+      "tests/__init__.py": {
+        "area": "Automated tests",
+        "lines": 0
+      },
+      "tests/test_world_failures.py": {
+        "area": "Automated tests",
+        "lines": 254
+      },
+      "tests/test_native.py": {
+        "area": "Automated tests",
+        "lines": 276
+      },
+      "tests/fixtures/invoice-invalid.yaml": {
+        "area": "Automated tests",
+        "lines": 60
+      },
+      "tests/fixtures/invoice-wrong.yaml": {
+        "area": "Automated tests",
+        "lines": 60
+      },
+      "tests/fixtures/checkout-llm.yaml": {
+        "area": "Automated tests",
+        "lines": 78
+      },
+      "pyproject.toml": {
+        "area": "Task loading packaging and Harbor glue",
+        "lines": 19
+      }
+    }
+  },
+  "production_reduction_percent": 55.0
+}

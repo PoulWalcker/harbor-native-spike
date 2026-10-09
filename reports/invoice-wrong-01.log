@@ -1,0 +1,260 @@
+warning: `VIRTUAL_ENV=/Users/pashvel/Desktop/work/backend/.venv` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+⠋ 0/1 Running trials...                                          0:00:00 -:--:--╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /Users/pashvel/Desktop/harbor-native-spike/.venv/lib/python3.14/site-package │
+│ s/harbor/cli/jobs.py:1613 in start                                           │
+│                                                                              │
+│   1610 │   # `_run_job` itself prints the summary + invokes the upload       │
+│        finalize                                                              │
+│   1611 │   # (when --upload is set) so everything stays on one event loop.   │
+│        See                                                                   │
+│   1612 │   # the long comment in `HarborHubUploadPlugin.on_job_end` for why  │
+│        this matters.                                                         │
+│ ❱ 1613 │   job, job_result = run_async(_run_job())                           │
+│   1614 │                                                                     │
+│   1615 │   if export_traces:                                                 │
+│   1616 │   │   from harbor.utils.traces_utils import export_traces as        │
+│        _export_traces                                                        │
+│                                                                              │
+│ /Users/pashvel/Desktop/harbor-native-spike/.venv/lib/python3.14/site-package │
+│ s/harbor/cli/utils.py:62 in run_async                                        │
+│                                                                              │
+│    59 │   """                                                                │
+│    60 │   if sys.platform == "win32":                                        │
+│    61 │   │   return asyncio.run(coro,                                       │
+│       loop_factory=asyncio.ProactorEventLoop)                                │
+│ ❱  62 │   return asyncio.run(coro)                                           │
+│    63                                                                        │
+│    64                                                                        │
+│    65 def parse_kwargs(kwargs_list: list[str] | None) -> dict[str, Any]:     │
+│                                                                              │
+│ /Users/pashvel/.local/share/uv/python/cpython-3.14.8-macos-aarch64-none/lib/ │
+│ python3.14/asyncio/runners.py:205 in run                                     │
+│                                                                              │
+│   202 │   │   │   "asyncio.run() cannot be called from a running event       │
+│       loop")                                                                 │
+│   203 │                                                                      │
+│   204 │   with Runner(debug=debug, loop_factory=loop_factory) as runner:     │
+│ ❱ 205 │   │   return runner.run(main)                                        │
+│   206                                                                        │
+│   207                                                                        │
+│   208 def _cancel_all_tasks(loop):                                           │
+│                                                                              │
+│ /Users/pashvel/.local/share/uv/python/cpython-3.14.8-macos-aarch64-none/lib/ │
+│ python3.14/asyncio/runners.py:128 in run                                     │
+│                                                                              │
+│   125 │   │                                                                  │
+│   126 │   │   self._interrupt_count = 0                                      │
+│   127 │   │   try:                                                           │
+│ ❱ 128 │   │   │   return self._loop.run_until_complete(task)                 │
+│   129 │   │   except exceptions.CancelledError:                              │
+│   130 │   │   │   if self._interrupt_count > 0:                              │
+│   131 │   │   │   │   uncancel = getattr(task, "uncancel", None)             │
+│                                                                              │
+│ /Users/pashvel/.local/share/uv/python/cpython-3.14.8-macos-aarch64-none/lib/ │
+│ python3.14/asyncio/base_events.py:720 in run_until_complete                  │
+│                                                                              │
+│    717 │   │   if not future.done():                                         │
+│    718 │   │   │   raise RuntimeError('Event loop stopped before Future      │
+│        completed.')                                                          │
+│    719 │   │                                                                 │
+│ ❱  720 │   │   return future.result()                                        │
+│    721 │                                                                     │
+│    722 │   def stop(self):                                                   │
+│    723 │   │   """Stop running the event loop.                               │
+│                                                                              │
+│ /Users/pashvel/Desktop/harbor-native-spike/.venv/lib/python3.14/site-package │
+│ s/harbor/cli/jobs.py:1566 in _run_job                                        │
+│                                                                              │
+│   1563 │   │   │   )                                                         │
+│   1564 │   │   │   await hub_plugin.on_job_start(job)                        │
+│   1565 │   │                                                                 │
+│ ❱ 1566 │   │   job_result = await job.run()                                  │
+│   1567 │   │                                                                 │
+│   1568 │   │   # Print the run summary BEFORE plugin and Harbor Hub finalize │
+│        so users                                                              │
+│   1569 │   │   # see results even if downstream operations fail.             │
+│                                                                              │
+│ /Users/pashvel/Desktop/harbor-native-spike/.venv/lib/python3.14/site-package │
+│ s/harbor/job.py:1037 in run                                                  │
+│                                                                              │
+│   1034 │   │   │   │   │   │   completed=n_existing,                         │
+│   1035 │   │   │   │   │   )                                                 │
+│   1036 │   │   │   │   │                                                     │
+│ ❱ 1037 │   │   │   │   │   trial_results = await                             │
+│        self._run_trials_with_queue(                                          │
+│   1038 │   │   │   │   │   │   loading_progress, progress_task,              │
+│        running_progress                                                      │
+│   1039 │   │   │   │   │   )                                                 │
+│   1040                                                                       │
+│                                                                              │
+│ /Users/pashvel/Desktop/harbor-native-spike/.venv/lib/python3.14/site-package │
+│ s/harbor/job.py:1187 in _run_trials_with_queue                               │
+│                                                                              │
+│   1184 │   │                                                                 │
+│   1185 │   │   coros =                                                       │
+│        self._trial_queue.submit_batch(self._remaining_trial_configs)         │
+│   1186 │   │                                                                 │
+│ ❱ 1187 │   │   async with asyncio.TaskGroup() as tg:                         │
+│   1188 │   │   │   tasks = [tg.create_task(coro) for coro in coros]          │
+│   1189 │   │                                                                 │
+│   1190 │   │   return [t.result() for t in tasks]                            │
+│                                                                              │
+│ /Users/pashvel/.local/share/uv/python/cpython-3.14.8-macos-aarch64-none/lib/ │
+│ python3.14/asyncio/taskgroups.py:72 in __aexit__                             │
+│                                                                              │
+│    69 │   async def __aexit__(self, et, exc, tb):                            │
+│    70 │   │   tb = None                                                      │
+│    71 │   │   try:                                                           │
+│ ❱  72 │   │   │   return await self._aexit(et, exc)                          │
+│    73 │   │   finally:                                                       │
+│    74 │   │   │   # Exceptions are heavy objects that can have object        │
+│    75 │   │   │   # cycles (bad for GC); let's not keep a reference to       │
+│                                                                              │
+│ /Users/pashvel/.local/share/uv/python/cpython-3.14.8-macos-aarch64-none/lib/ │
+│ python3.14/asyncio/taskgroups.py:174 in _aexit                               │
+│                                                                              │
+│   171 │   │   │   │   self._parent_task.uncancel()                           │
+│   172 │   │   │   │   self._parent_task.cancel()                             │
+│   173 │   │   │   try:                                                       │
+│ ❱ 174 │   │   │   │   raise BaseExceptionGroup(                              │
+│   175 │   │   │   │   │   'unhandled errors in a TaskGroup',                 │
+│   176 │   │   │   │   │   self._errors,                                      │
+│   177 │   │   │   │   ) from None                                            │
+╰──────────────────────────────────────────────────────────────────────────────╯
+ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+
+╭────────────────────────────── Sub-exception #1 ──────────────────────────────╮
+│ ╭─────────────────── Traceback (most recent call last) ────────────────────╮ │
+│ │ /Users/pashvel/Desktop/harbor-native-spike/.venv/lib/python3.14/site-pac │ │
+│ │ kages/harbor/trial/queue.py:242 in _run_trial                            │ │
+│ │                                                                          │ │
+│ │   239 │   async def _run_trial(self, trial_config: TrialConfig) ->       │ │
+│ │       TrialResult:                                                       │ │
+│ │   240 │   │   """Execute a single trial, acquiring the semaphore for     │ │
+│ │       concurrency control."""                                            │ │
+│ │   241 │   │   async with self._semaphore:                                │ │
+│ │ ❱ 242 │   │   │   return await                                           │ │
+│ │       self._execute_trial_with_retries(trial_config)                     │ │
+│ │   243 │                                                                  │ │
+│ │   244 │   def submit(self, trial_config: TrialConfig) -> Coroutine[Any,  │ │
+│ │       Any, TrialResult]:                                                 │ │
+│ │   245 │   │   """                                                        │ │
+│ │                                                                          │ │
+│ │ /Users/pashvel/Desktop/harbor-native-spike/.venv/lib/python3.14/site-pac │ │
+│ │ kages/harbor/trial/queue.py:201 in _execute_trial_with_retries           │ │
+│ │                                                                          │ │
+│ │   198 │   │   from harbor.trial.trial import Trial                       │ │
+│ │   199 │   │                                                              │ │
+│ │   200 │   │   for attempt in range(self._retry_config.max_retries + 1):  │ │
+│ │ ❱ 201 │   │   │   trial = await Trial.create(trial_config)               │ │
+│ │   202 │   │   │   self._setup_hooks(trial)                               │ │
+│ │   203 │   │   │   result = await trial.run()                             │ │
+│ │   204                                                                    │ │
+│ │                                                                          │ │
+│ │ /Users/pashvel/Desktop/harbor-native-spike/.venv/lib/python3.14/site-pac │ │
+│ │ kages/harbor/trial/trial.py:295 in create                                │ │
+│ │                                                                          │ │
+│ │    292 │   │                                                             │ │
+│ │    293 │   │   from harbor.trial.single_step import SingleStepTrial      │ │
+│ │    294 │   │                                                             │ │
+│ │ ❱  295 │   │   return SingleStepTrial(                                   │ │
+│ │    296 │   │   │   config,                                               │ │
+│ │    297 │   │   │   _task=task,                                           │ │
+│ │    298 │   │   │   _task_download_result=task_download_result,           │ │
+│ │                                                                          │ │
+│ │ /Users/pashvel/Desktop/harbor-native-spike/.venv/lib/python3.14/site-pac │ │
+│ │ kages/harbor/trial/single_step.py:30 in __init__                         │ │
+│ │                                                                          │ │
+│ │    27 │   ):                                                             │ │
+│ │    28 │   │   if _task is not None and _task.has_steps:                  │ │
+│ │    29 │   │   │   raise ValueError("SingleStepTrial requires a task      │ │
+│ │       without [[steps]].")                                               │ │
+│ │ ❱  30 │   │   super().__init__(                                          │ │
+│ │    31 │   │   │   config,                                                │ │
+│ │    32 │   │   │   _task=_task,                                           │ │
+│ │    33 │   │   │   _task_download_result=_task_download_result,           │ │
+│ │                                                                          │ │
+│ │ /Users/pashvel/Desktop/harbor-native-spike/.venv/lib/python3.14/site-pac │ │
+│ │ kages/harbor/trial/trial.py:123 in __init__                              │ │
+│ │                                                                          │ │
+│ │    120 │   │   try:                                                      │ │
+│ │    121 │   │   │   self._init_logger()                                   │ │
+│ │    122 │   │   │   self._init_timeouts()                                 │ │
+│ │ ❱  123 │   │   │   self._init_agent()                                    │ │
+│ │    124 │   │   │   self._init_agent_environment()                        │ │
+│ │    125 │   │   │   self._init_artifact_handler()                         │ │
+│ │    126 │   │   │   self._validate_network_policy_modes()                 │ │
+│ │                                                                          │ │
+│ │ /Users/pashvel/Desktop/harbor-native-spike/.venv/lib/python3.14/site-pac │ │
+│ │ kages/harbor/trial/trial.py:843 in _init_agent                           │ │
+│ │                                                                          │ │
+│ │    840 │   │   if self.config.agent.load_trajectory:                     │ │
+│ │    841 │   │   │   extra_kwargs["load_trajectory"] =                     │ │
+│ │        self.config.agent.load_trajectory                                 │ │
+│ │    842 │   │                                                             │ │
+│ │ ❱  843 │   │   self.agent = AgentFactory.create_agent_from_config(       │ │
+│ │    844 │   │   │   self.config.agent,                                    │ │
+│ │    845 │   │   │   logs_dir=self.paths.agent_dir,                        │ │
+│ │    846 │   │   │   logger=self.logger,                                   │ │
+│ │                                                                          │ │
+│ │ /Users/pashvel/Desktop/harbor-native-spike/.venv/lib/python3.14/site-pac │ │
+│ │ kages/harbor/agents/factory.py:195 in create_agent_from_config           │ │
+│ │                                                                          │ │
+│ │   192 │   │   │   │   **agent_kwargs,                                    │ │
+│ │   193 │   │   │   )                                                      │ │
+│ │   194 │   │   elif import_path is not None:                              │ │
+│ │ ❱ 195 │   │   │   return cls.create_agent_from_import_path(              │ │
+│ │   196 │   │   │   │   import_path,                                       │ │
+│ │   197 │   │   │   │   logs_dir=logs_dir,                                 │ │
+│ │   198 │   │   │   │   model_name=config.model_name,                      │ │
+│ │                                                                          │ │
+│ │ /Users/pashvel/Desktop/harbor-native-spike/.venv/lib/python3.14/site-pac │ │
+│ │ kages/harbor/agents/factory.py:130 in create_agent_from_import_path      │ │
+│ │                                                                          │ │
+│ │   127 │   │   Raises:                                                    │ │
+│ │   128 │   │   │   ValueError: If the import path is invalid.             │ │
+│ │   129 │   │   """                                                        │ │
+│ │ ❱ 130 │   │   agent_class = _import_agent_class(import_path)             │ │
+│ │   131 │   │   return agent_class(logs_dir=logs_dir,                      │ │
+│ │       model_name=model_name, **kwargs)                                   │ │
+│ │   132 │                                                                  │ │
+│ │   133 │   @classmethod                                                   │ │
+│ │                                                                          │ │
+│ │ /Users/pashvel/Desktop/harbor-native-spike/.venv/lib/python3.14/site-pac │ │
+│ │ kages/harbor/agents/factory.py:20 in _import_agent_class                 │ │
+│ │                                                                          │ │
+│ │    17 def _import_agent_class(import_path: str) -> "type[BaseAgent]":    │ │
+│ │    18 │   return cast(                                                   │ │
+│ │    19 │   │   "type[BaseAgent]",                                         │ │
+│ │ ❱  20 │   │   import_class(import_path, label="agent"),                  │ │
+│ │    21 │   )                                                              │ │
+│ │    22                                                                    │ │
+│ │    23                                                                    │ │
+│ │                                                                          │ │
+│ │ /Users/pashvel/Desktop/harbor-native-spike/.venv/lib/python3.14/site-pac │ │
+│ │ kages/harbor/utils/import_path.py:36 in import_class                     │ │
+│ │                                                                          │ │
+│ │   33 │   base: type | None = None,                                       │ │
+│ │   34 │   label: str = "symbol",                                          │ │
+│ │   35 ) -> type:                                                          │ │
+│ │ ❱ 36 │   symbol = import_symbol(import_path)                             │ │
+│ │   37 │   if not isinstance(symbol, type):                                │ │
+│ │   38 │   │   raise TypeError(f"Imported {label} '{import_path}' must be  │ │
+│ │      a class")                                                           │ │
+│ │   39 │   if base is not None and not issubclass(symbol, base):           │ │
+│ │                                                                          │ │
+│ │ /Users/pashvel/Desktop/harbor-native-spike/.venv/lib/python3.14/site-pac │ │
+│ │ kages/harbor/utils/import_path.py:20 in import_symbol                    │ │
+│ │                                                                          │ │
+│ │   17 │   try:                                                            │ │
+│ │   18 │   │   module = importlib.import_module(module_path)               │ │
+│ │   19 │   except ImportError as exc:                                      │ │
+│ │ ❱ 20 │   │   raise ValueError(f"Failed to import module '{module_path}': │ │
+│ │      {exc}") from exc                                                    │ │
+│ │   21 │                                                                   │ │
+│ │   22 │   try:                                                            │ │
+│ │   23 │   │   return getattr(module, symbol_name)                         │ │
+│ ╰──────────────────────────────────────────────────────────────────────────╯ │
+│ ValueError: Failed to import module 'tests.control_agent': No module named   │
+│ 'tests'                                                                      │
+╰──────────────────────────────────────────────────────────────────────────────╯

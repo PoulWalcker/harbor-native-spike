@@ -1,0 +1,4 @@
+{
+  "harbor-native-agent:spike": "sha256:ff144662fa75445b4314fb6e01e236f4b1a43acca465a45dfef5029906c3ed1c",
+  "harbor-native-runtime:spike": "sha256:118c3c916fcdbfa1647c441f3e5c826caf2ff6ff5c7615ecab1a518764de05d2"
+}

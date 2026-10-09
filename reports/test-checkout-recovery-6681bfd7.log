@@ -1,0 +1,25 @@
+  1/1 Mean: 0.000 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 0:00:48 0:00:00
+adhoc • spike-control
+┏━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━┓
+┃ Trials ┃ Exceptions ┃  Mean ┃
+┡━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━┩
+│      0 │          1 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━┓
+┃ Exception               ┃ Count ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━┩
+│ RewardFileNotFoundError │     1 │
+└─────────────────────────┴───────┘
+
+Job Info
+Total runtime: 48s
+Results written to 
+/Users/pashvel/Desktop/harbor-native-spike/jobs/test-checkout-recovery-6681bfd7/
+result.json
+Inspect results by running `harbor view 
+/Users/pashvel/Desktop/harbor-native-spike/jobs`
+Share results by running `harbor upload 
+/Users/pashvel/Desktop/harbor-native-spike/jobs/test-checkout-recovery-6681bfd7`
+
+fatal: bad revision 'HEAD'

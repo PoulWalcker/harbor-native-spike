@@ -1,0 +1,25 @@
+  1/1 Mean: 0.000 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 0:00:29 0:00:00
+adhoc • spike-control
+┏━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━┓
+┃ Trials ┃ Exceptions ┃  Mean ┃
+┡━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━┩
+│      1 │          0 │ 0.000 │
+└────────┴────────────┴───────┘
+
+┏━━━━━━━━┳━━━━━━━┓
+┃ Reward ┃ Count ┃
+┡━━━━━━━━╇━━━━━━━┩
+│ 0.0    │     1 │
+└────────┴───────┘
+
+Job Info
+Total runtime: 29s
+Results written to 
+/Users/pashvel/Desktop/harbor-native-spike/jobs/test-invoice-total-453056f8/resu
+lt.json
+Inspect results by running `harbor view 
+/Users/pashvel/Desktop/harbor-native-spike/jobs`
+Share results by running `harbor upload 
+/Users/pashvel/Desktop/harbor-native-spike/jobs/test-invoice-total-453056f8`
+
+fatal: bad revision 'HEAD'
